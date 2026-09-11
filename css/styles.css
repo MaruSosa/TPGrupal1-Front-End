@@ -1,0 +1,168 @@
+/* Variables Globals - Paleta Oscura Fija */
+:root {
+  --primary-color: #3182ce;      
+  --primary-hover: #2b6cb0;     
+  --bg-color: #0f172a;           
+  --card-bg: #1e293b;         
+  --text-color: #f8fafc;          
+  --text-muted: #94a3b8;        
+  --border-color: #334155;      
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --font-main: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Header / Navegación */
+.header {
+  background-color: #0b1120;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo { font-weight: 700; font-size: 1.2rem; color: var(--primary-color); }
+.nav { display: flex; gap: 1rem; }
+.nav a { text-decoration: none; color: var(--text-muted); font-weight: 500; transition: color 0.2s; }
+.nav a:hover, .nav a.active { color: var(--text-color); font-weight: 700; }
+
+/* Hero Banner */
+.hero-banner {
+  /* Bajamos la opacidad a 0.5 y 0.65 para que la imagen resalte más */
+  background: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.65)), 
+              url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  color: var(--text-color);
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.hero-content h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color:#1a9dd5 }
+.hero-content .subtitle { font-size: 1.8rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+.hero-content .proposito { font-size: 1.4rem; color: #dbe2ea; }
+
+/* Títulos de sección */
+.section-title { text-align: center; margin: 2.5rem 0 1.5rem; }
+.section-title h2 { color: var(--primary-color); font-size: 1.8rem; }
+.section-title p { color: var(--text-muted); }
+
+/* Carrusel */
+.carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  list-style: none;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  padding: 1rem;
+}
+
+.carousel-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background-color 0.2s;
+}
+
+.carousel-btn:hover { background-color: var(--primary-hover); }
+
+/* Tarjetas */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.card-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+}
+
+.card h3 { font-size: 1.3rem; margin-bottom: 0.25rem; }
+.card .role { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem; }
+
+.card-links { display: flex; gap: 0.5rem; justify-content: center; margin-top: 1rem; }
+
+.btn, .btn-profile, .btn-github {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.btn, .btn-profile { background-color: var(--primary-color); color: white; }
+.btn-profile:hover { background-color: var(--primary-hover); }
+
+.btn-github { background-color: #415a74; color: white; }
+.btn-github:hover { background-color: #1a9dd5; }
+
+/* Servicios */
+.services-section { background-color: #0b1120; padding: 3rem 1rem; margin-top: 3rem; }
+.services-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+.service-box { 
+  background-color: var(--card-bg); 
+  border: 1px solid var(--border-color);
+  padding: 1.5rem; 
+  border-radius: 8px; 
+  box-shadow: var(--shadow); 
+  text-align: center; 
+}
+
+/* Footer */
+.footer { text-align: center; padding: 2rem; background-color: #070a13; color: var(--text-muted); }
+
+/* Breakpoints Obligatorios (Consigna: 400px, 900px, 1200px) */
+@media (min-width: 400px) {
+  .hero-content h1 { font-size: 2.8rem; }
+}
+
+@media (min-width: 900px) {
+  .services-grid { grid-template-columns: repeat(3, 1fr); }
+  .carousel-slide { min-width: 50%; } /* Muestra 2 tarjetas simultáneas en pantallas medianas */
+}
+
+@media (min-width: 1200px) {
+  .container { max-width: 1200px; margin: 0 auto; }
+}
