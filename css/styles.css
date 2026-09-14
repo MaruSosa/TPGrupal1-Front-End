@@ -45,12 +45,13 @@ body {
   display: flex; 
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 0.8rem; 
   width: 100%;
 }
 
-.nav a { 
+.nav a, .dropdown-btn { 
   text-decoration: none; 
   color: var(--text-color); 
   font-weight: 500; 
@@ -58,9 +59,59 @@ body {
   padding: 0.2rem 0.5rem;
 }
 
-.nav a:hover, .nav a.active { 
+.nav a:hover, .nav a.active, .dropdown:hover .dropdown-btn { 
   color: rgb(95, 239, 250); 
   font-weight: 700; 
+}
+
+/* --- MENÚ DESPLEGABLE (DROPDOWN) --- */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--card-bg);
+  min-width: 180px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: var(--text-muted);
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.95rem;
+  text-align: left;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Hero Banner */
@@ -155,8 +206,8 @@ body {
   transition: background-color 0.2s;
 }
 
-.btn, .btn-profile { background-color: var(--primary-color); color: white; }
-.btn-profile:hover { background-color: var(--primary-hover); }
+.btn, .btn-profile { background-color: var(--primary-hover); color: white; }
+.btn-profile:hover { background-color:rgb(110, 193, 235); }
 
 .btn-github { background-color: #415a74; color: white; }
 .btn-github:hover { background-color: #1a9dd5; }
@@ -175,12 +226,141 @@ body {
 
 /* Footer */
 .footer { text-align: center; padding: 2rem; background-color: #070a13; color: var(--text-muted); }
+/* --- TÍTULO DE SECCIÓN --- */
+.section-title { 
+  text-align: center; 
+  margin: 2.5rem 0 1.5rem; 
+}
+.section-title h2 { 
+  color: var(--primary-color); 
+  font-size: 1.8rem; 
+}
+.section-title p { 
+  color: var(--text-muted); 
+}
+/* --- SECCIÓN FORMULARIO DE CONTACTO (CENTRADERA Y ANCHO CONTROLADO) --- */
+.contact-section {
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el formulario */
+  align-items: center;
+  width: 100%;
+}
 
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 850px; /* Evita que se haga gigante en pantallas grandes */
+  width: 100%;
+  margin: 0 auto; /* Centra el bloque */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+/* Columna Izquierda (Azul) */
+.contact-info {
+  background-color: #105494;
+  color: #ffffff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.contact-info h2 {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.info-details p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Columna Derecha (Formulario) */
+.contact-form {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form h2 {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.form-group label {
+  color: rgb(87, 202, 251);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* Inputs con línea inferior */
+.form-group input, 
+.form-group textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  border-bottom-color: var(--primary-color);
+}
+
+.btn-submit {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.8rem;
+  align-self: flex-start;
+  transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: rgb(161, 194, 248);
+  color: #070a13;
+}
+
+/* Breakpoint para pantallas medianas/grandes (2 columnas equilibradas) */
+@media (min-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr 1.2fr;
+  }
+}
+/* Breakpoint para pantallas grandes (2 columnas) */
+@media (min-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr 1.3fr;
+  }
+}
 /* ===================================================
    BREAKPOINTS OBLIGATORIOS (Consigna: 400px, 900px, 1200px)
    =================================================== */
 
-/* Breakpoint 1: 400px en adelante (Pantallas pequeñas/medianas) */
+/* Breakpoint 1: 400px en adelante */
 @media (min-width: 400px) {
   .header {
     padding: 1rem 1.5rem;
@@ -199,7 +379,7 @@ body {
   }
 }
 
-/* Breakpoint 2: 900px en adelante (Tablets horizontales y Laptops) */
+/* Breakpoint 2: 900px en adelante */
 @media (min-width: 900px) {
   .header { 
     flex-direction: row; 
@@ -212,15 +392,20 @@ body {
     justify-content: flex-end; 
     gap: 1.2rem; 
   }
+  .dropdown-content {
+    left: auto;
+    right: 0;
+    transform: none;
+  }
   .services-grid { 
     grid-template-columns: repeat(3, 1fr); 
   }
   .carousel-slide { 
-    min-width: 50%; /* Muestra 2 tarjetas simultáneas */
+    min-width: 50%;
   } 
 }
 
-/* Breakpoint 3: 1200px en adelante (Monitores de Escritorio) */
+/* Breakpoint 3: 1200px en adelante */
 @media (min-width: 1200px) {
   .container { 
     max-width: 1200px; 
