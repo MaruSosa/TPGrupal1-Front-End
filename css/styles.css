@@ -1,4 +1,6 @@
-/* Variables Globals - Paleta Oscura Fija */
+/* ===================================================
+   1. VARIABLES GLOBALES Y RESET (Paleta Oscura Fija)
+   =================================================== */
 :root {
   --primary-color: #3182ce;
   --primary-hover: #2b6cb0;
@@ -24,7 +26,13 @@ body {
   line-height: 1.6;
 }
 
-/* Header / Navegación (Estilo Base Mobile First) */
+.container {
+  width: 100%;
+}
+
+/* ===================================================
+   2. HEADER Y NAVEGACIÓN (Mobile-First)
+   =================================================== */
 .header {
   background-color: #0b1120;
   padding: 1rem;
@@ -67,7 +75,7 @@ body {
   font-weight: 700;
 }
 
-/* --- MENÚ DESPLEGABLE (DROPDOWN) --- */
+/* --- Menú Desplegable (Dropdown) --- */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -104,9 +112,7 @@ body {
   font-size: 0.95rem;
   text-align: left;
   white-space: nowrap;
-  transition:
-    background 0.2s,
-    color 0.2s;
+  transition: background 0.2s, color 0.2s;
 }
 
 .dropdown-content a:hover {
@@ -119,7 +125,9 @@ body {
   flex-direction: column;
 }
 
-/* Hero Banner */
+/* ===================================================
+   3. HERO BANNER Y SECCIONES GENERALEZ
+   =================================================== */
 .hero-banner {
   background:
     linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.65)),
@@ -135,30 +143,35 @@ body {
   margin-bottom: 0.5rem;
   color: #1a9dd5;
 }
+
 .hero-content .subtitle {
   font-size: 1.3rem;
   color: var(--text-muted);
   margin-bottom: 0.5rem;
 }
+
 .hero-content .proposito {
   font-size: 1.1rem;
   color: #dbe2ea;
 }
 
-/* Títulos de sección */
 .section-title {
   text-align: center;
   margin: 2.5rem 0 1.5rem;
 }
+
 .section-title h2 {
   color: var(--primary-color);
   font-size: 1.8rem;
 }
+
 .section-title p {
   color: var(--text-muted);
 }
 
-/* Carrusel */
+/* ===================================================
+   4. CARRUSEL Y TARJETAS DE EQUIPO
+   =================================================== */
 .carousel-container {
   position: relative;
   max-width: 800px;
@@ -200,7 +213,6 @@ body {
   background-color: var(--primary-hover);
 }
 
-/* Tarjetas */
 .card {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
@@ -222,8 +234,9 @@ body {
 .card h3 {
   font-size: 1.3rem;
   margin-bottom: 0.25rem;
-  color: #55bfed
+  color: #55bfed;
 }
+
 .card .role {
   color: #f7fbfd;
   font-size: 0.95rem;
@@ -236,15 +249,16 @@ body {
   justify-content: center;
   margin-top: 1rem;
 }
-/* Centra los íconos en la tarjeta y les da margen superior */
+
 .card-socials {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;           /* Espacio horizontal entre cada icono */
-  margin-top: 20px;    /* Separación con respecto al botón "Ver Perfil" */
+  gap: 12px;
+  margin-top: 20px;
   width: 100%;
 }
+
 .btn,
 .btn-profile,
 .btn-github {
@@ -262,6 +276,7 @@ body {
   background-color: var(--primary-hover);
   color: white;
 }
+
 .btn-profile:hover {
   background-color: rgb(110, 193, 235);
 }
@@ -270,21 +285,26 @@ body {
   background-color: #415a74;
   color: white;
 }
+
 .btn-github:hover {
   background-color: #1a9dd5;
 }
 
-/* Servicios */
+/* ===================================================
+   5. SECCIÓN DE SERVICIOS
+   =================================================== */
 .services-section {
   background-color: #0b1120;
   padding: 3rem 1rem;
   margin-top: 3rem;
 }
+
 .services-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
 }
+
 .service-box {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
@@ -293,158 +313,14 @@ body {
   box-shadow: var(--shadow);
   text-align: center;
 }
-/* ==========================================
-   ESTILOS GENERALES Y LAYOUT (CSS FLEXBOX)
-   ========================================== */
-.footer-bottom {
-  width: 100%;
-  background-color: #141421;
-  border-top: 1px solid #2e2e4c;
-  padding: 20px 0;
-  color: #40d3f1;
-  font-family: "Rubik", sans-serif;
-  font-size: 20px;
-}
 
-/* Contenedor principal alineado */
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.footer-col {
-  display: flex;
-  align-items: center;
-}
-
-/* Enlaces */
-.footer-info a,
-.footer-nav a {
-  color: #40d3f1;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-info a:hover,
-.footer-nav a:hover {
-  color: #ffffff;
-}
-
-/* Menú central */
-.footer-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 25px;
-}
-
-/* ==========================================
-   BOTONES SOCIALES NEUMÓRFICOS
-   ========================================== */
-.footer-socials {
-  display: flex;
-  gap: 10px;
-}
-
-a.socials-item {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background-color: #141421;
-  border: 1px solid #2e2e4c;
-  text-decoration: none;
-
-  /* Relieve Neumórfico Oscuro */
-  box-shadow:
-    3px 9px 16px rgba(0, 0, 0, 0.4),
-    -3px -3px 10px rgba(255, 255, 255, 0.06),
-    inset 14px 14px 26px rgba(0, 0, 0, 0.3),
-    inset -3px -3px 15px rgba(255, 255, 255, 0.05);
-
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.socials-item i {
-  font-size: 28px;
-  line-height: 1;
-}
-
-/* Colores de Marca */
-.facebook {
-  color: #1877f2;
-}
-.github {
-  color: #ffffff;
-}
-.instagram {
-  color: #e4405f;
-}
-.linkedin {
-  color: #479aed;
-}
-.youtube {
-  color: #ff0000;
-}
-.telegram {
-  color: #24a1de;
-}
-.twitter {
-  color: #1da1f2;
-}
-
-/* Efecto Hover General */
-a.socials-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0px 20px rgba(1, 74, 84, 0.7);
-  border-color: rgba(6, 255, 251, 0.61);
-  background: linear-gradient(
-    to right,
-    rgba(233, 236, 237, 0.13),
-    #010607b5,
-    rgba(255, 0, 94, 0.14)
-  );
-}
-
-/* Brillo individual en hover */
-a.socials-item:hover .facebook {
-  filter: drop-shadow(0 0 8px #1877f2);
-}
-a.socials-item:hover .github {
-  filter: drop-shadow(0 0 8px #ffffff);
-}
-a.socials-item:hover .instagram {
-  filter: drop-shadow(0 0 8px #e4405f);
-}
-a.socials-item:hover .linkedin {
-  filter: drop-shadow(0 0 8px #0a66c2);
-}
-
-/* Adaptación para pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .footer-nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-/* --- SECCIÓN FORMULARIO DE CONTACTO (CENTRADERA Y ANCHO CONTROLADO) --- */
+/* ===================================================
+   6. FORMULARIO DE CONTACTO
+   =================================================== */
 .contact-section {
   padding: 3rem 1rem;
   display: flex;
-  justify-content: center; /* Centra horizontalmente el formulario */
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
@@ -452,16 +328,15 @@ a.socials-item:hover .linkedin {
 .contact-container {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 850px; /* Evita que se haga gigante en pantallas grandes */
+  max-width: 850px;
   width: 100%;
-  margin: 0 auto; /* Centra el bloque */
+  margin: 0 auto;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--shadow);
   border: 1px solid var(--border-color);
 }
 
-/* Columna Izquierda (Azul) */
 .contact-info {
   background-color: #105494;
   color: #ffffff;
@@ -482,7 +357,6 @@ a.socials-item:hover .linkedin {
   font-size: 0.95rem;
 }
 
-/* Columna Derecha (Formulario) */
 .contact-form {
   background-color: var(--card-bg);
   padding: 2rem;
@@ -509,7 +383,6 @@ a.socials-item:hover .linkedin {
   font-weight: 500;
 }
 
-/* Inputs con línea inferior */
 .form-group input,
 .form-group textarea {
   background: transparent;
@@ -546,21 +419,125 @@ a.socials-item:hover .linkedin {
   color: #070a13;
 }
 
-/* Breakpoint para pantallas medianas/grandes (2 columnas equilibradas) */
-@media (min-width: 900px) {
-  .contact-container {
-    grid-template-columns: 1fr 1.2fr;
-  }
-}
-/* Breakpoint para pantallas grandes (2 columnas) */
-@media (min-width: 900px) {
-  .contact-container {
-    grid-template-columns: 1fr 1.3fr;
-  }
-}
 /* ===================================================
-   BREAKPOINTS OBLIGATORIOS (Consigna: 400px, 900px, 1200px)
+   7. FOOTER Y BOTONES NEUMÓRFICOS
    =================================================== */
+.footer-bottom {
+  width: 100%;
+  background-color: #141421;
+  border-top: 1px solid #2e2e4c;
+  padding: 20px 0;
+  color: #40d3f1;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-col {
+  display: flex;
+  align-items: center;
+}
+
+.footer-info a,
+.footer-nav a {
+  color: #40d3f1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-info a:hover,
+.footer-nav a:hover {
+  color: #ffffff;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 25px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 10px;
+}
+
+a.socials-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #141421;
+  border: 1px solid #2e2e4c;
+  text-decoration: none;
+  box-shadow:
+    3px 9px 16px rgba(0, 0, 0, 0.4),
+    -3px -3px 10px rgba(255, 255, 255, 0.06),
+    inset 14px 14px 26px rgba(0, 0, 0, 0.3),
+    inset -3px -3px 15px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.socials-item i {
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* Colores de marca redes sociales */
+.facebook { color: #1877f2; }
+.github   { color: #ffffff; }
+.instagram{ color: #e4405f; }
+.linkedin { color: #479aed; }
+.youtube  { color: #ff0000; }
+.telegram { color: #24a1de; }
+.twitter  { color: #1da1f2; }
+
+/* Hover global y brillo neón */
+a.socials-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0px 20px rgba(1, 74, 84, 0.7);
+  border-color: rgba(6, 255, 251, 0.61);
+  background: linear-gradient(
+    to right,
+    rgba(233, 236, 237, 0.13),
+    #010607b5,
+    rgba(255, 0, 94, 0.14)
+  );
+}
+
+a.socials-item:hover .facebook  { filter: drop-shadow(0 0 8px #1877f2); }
+a.socials-item:hover .github    { filter: drop-shadow(0 0 8px #ffffff); }
+a.socials-item:hover .instagram { filter: drop-shadow(0 0 8px #e4405f); }
+a.socials-item:hover .linkedin  { filter: drop-shadow(0 0 8px #0a66c2); }
+
+/* ===================================================
+   8. MEDIA QUERIES (BREAKPOINTS)
+   =================================================== */
+
+/* Ajustes Footer Móvil */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 
 /* Breakpoint 1: 400px en adelante */
 @media (min-width: 400px) {
@@ -604,6 +581,9 @@ a.socials-item:hover .linkedin {
   }
   .carousel-slide {
     min-width: 50%;
+  }
+  .contact-container {
+    grid-template-columns: 1fr 1.3fr;
   }
 }
 
