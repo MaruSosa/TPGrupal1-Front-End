@@ -193,8 +193,14 @@ body {
    3. HERO BANNER Y SECCIONES GENERALEZ
    =================================================== */
 .hero-banner {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   background:
-    linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.65)),
+    linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.75)),
     url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1350&q=80")
       center/cover no-repeat;
   color: var(--text-color);
