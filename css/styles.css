@@ -603,3 +603,69 @@ a.socials-item:hover .linkedin  { filter: drop-shadow(0 0 8px #0a66c2); }
     font-size: 3rem;
   }
 }
+
+
+/* ===================================================
+   9. SECCIONES DE PERFIL Y BITÁCORA
+   =================================================== */
+
+.profile-section {
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profile-container {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 8px 25px rgba(49, 130, 206, 0.3);
+}
+
+.profile-section h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.8rem;
+}
+
+.profile-container h3 {
+  font-size: 1.3rem;
+  color: #55bfed;
+  margin-bottom: 1rem;
+}
+
+.profile-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-lista li {
+  background-color: #0f172a;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 0.6rem;
+  color: var(--text-muted);
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.profile-lista li:hover {
+  border-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.profile-lista li strong {
+  color: #55bfed;
+}
