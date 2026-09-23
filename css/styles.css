@@ -41,6 +41,7 @@ body {
   align-items: center;
   gap: 0.8rem;
   border-bottom: 1px solid var(--border-color);
+  position: relative;
 }
 
 .logo {
@@ -112,7 +113,9 @@ body {
   font-size: 0.95rem;
   text-align: left;
   white-space: nowrap;
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 
 .dropdown-content a:hover {
@@ -124,7 +127,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 
 /* ===================================================
    MENÚ HAMBURGUESA (MOBILE)
@@ -157,9 +159,15 @@ body {
   .nav {
     display: none;
     flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
-    margin-top: 1rem;
+    background-color: #0b1120;
+    padding: 1rem;
     gap: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    z-index: 999;
   }
 
   .nav.open {
@@ -186,8 +194,6 @@ body {
     padding: 0.5rem;
   }
 }
-
-
 
 /* ===================================================
    3. HERO BANNER Y SECCIONES GENERALEZ
@@ -502,7 +508,7 @@ body {
   font-size: 20px;
 }
 
-.footer-container {
+/* .footer-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -511,11 +517,11 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-}
+} */
 
 .footer-col {
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 
 .footer-info a,
@@ -567,13 +573,27 @@ a.socials-item {
 }
 
 /* Colores de marca redes sociales */
-.facebook { color: #1877f2; }
-.github   { color: #ffffff; }
-.instagram{ color: #e4405f; }
-.linkedin { color: #479aed; }
-.youtube  { color: #ff0000; }
-.telegram { color: #24a1de; }
-.twitter  { color: #1da1f2; }
+.facebook {
+  color: #1877f2;
+}
+.github {
+  color: #ffffff;
+}
+.instagram {
+  color: #e4405f;
+}
+.linkedin {
+  color: #479aed;
+}
+.youtube {
+  color: #ff0000;
+}
+.telegram {
+  color: #24a1de;
+}
+.twitter {
+  color: #1da1f2;
+}
 
 /* Hover global y brillo neón */
 a.socials-item:hover {
@@ -588,10 +608,18 @@ a.socials-item:hover {
   );
 }
 
-a.socials-item:hover .facebook  { filter: drop-shadow(0 0 8px #1877f2); }
-a.socials-item:hover .github    { filter: drop-shadow(0 0 8px #ffffff); }
-a.socials-item:hover .instagram { filter: drop-shadow(0 0 8px #e4405f); }
-a.socials-item:hover .linkedin  { filter: drop-shadow(0 0 8px #0a66c2); }
+a.socials-item:hover .facebook {
+  filter: drop-shadow(0 0 8px #1877f2);
+}
+a.socials-item:hover .github {
+  filter: drop-shadow(0 0 8px #ffffff);
+}
+a.socials-item:hover .instagram {
+  filter: drop-shadow(0 0 8px #e4405f);
+}
+a.socials-item:hover .linkedin {
+  filter: drop-shadow(0 0 8px #0a66c2);
+}
 
 /* ===================================================
    8. MEDIA QUERIES (BREAKPOINTS)
@@ -599,13 +627,16 @@ a.socials-item:hover .linkedin  { filter: drop-shadow(0 0 8px #0a66c2); }
 
 /* Ajustes Footer Móvil */
 @media (max-width: 768px) {
-  .footer-container {
+  /* .footer-container {
     flex-direction: column;
     text-align: center;
   }
   .footer-nav ul {
     flex-direction: column;
     gap: 10px;
+  } */
+  .footer-copy {
+    text-align: center;
   }
 }
 
@@ -674,7 +705,6 @@ a.socials-item:hover .linkedin  { filter: drop-shadow(0 0 8px #0a66c2); }
   }
 }
 
-
 /* ===================================================
    9. SECCIONES DE PERFIL Y BITÁCORA
    =================================================== */
@@ -692,7 +722,9 @@ a.socials-item:hover .linkedin  { filter: drop-shadow(0 0 8px #0a66c2); }
   padding: 2rem;
   margin-bottom: 2rem;
   box-shadow: var(--shadow);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .profile-container:hover {
@@ -728,7 +760,9 @@ a.socials-item:hover .linkedin  { filter: drop-shadow(0 0 8px #0a66c2); }
   padding: 0.8rem 1.2rem;
   margin-bottom: 0.6rem;
   color: var(--text-muted);
-  transition: border-color 0.3s ease, color 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .profile-lista li:hover {
@@ -738,4 +772,102 @@ a.socials-item:hover .linkedin  { filter: drop-shadow(0 0 8px #0a66c2); }
 
 .profile-lista li strong {
   color: #55bfed;
+}
+
+/* ===================================================
+   10. FOOTER NUEVO
+   =================================================== */
+
+.footer {
+  background-color: #141421;
+  border-top: 1px solid #2e2e4c;
+  padding: 3rem 1rem 1.5rem;
+  color: #40d3f1;
+  font-family: "Rubik", sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #2e2e4c;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-col h3 {
+  color: #3182ce;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-col h4 {
+  color: #f8fafc;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-col p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.3rem;
+}
+
+.footer-col ul li a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #38bdf8;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-socials a {
+  color: #94a3b8;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #38bdf8;
+  transform: translateY(-3px);
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.5));
+}
+
+.footer-copy {
+  text-align: center;
+  padding-top: 1.5rem;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+  }
 }
