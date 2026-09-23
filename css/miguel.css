@@ -1,0 +1,404 @@
+/* ==========================================
+   MIGUEL.CSS - Estilos del perfil de Miguel
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    background-attachment: fixed;
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   HEADER Y NAVEGACIÓN
+   ========================================== */
+
+.header {
+    background-color: #0b1120;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    border-bottom: 1px solid #334155;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #3182ce;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+.nav a,
+.dropdown-btn {
+    text-decoration: none;
+    color: #f8fafc;
+    font-weight: 500;
+    transition: color 0.2s;
+    padding: 0.2rem 0.5rem;
+}
+
+.nav a:hover,
+.nav a.active,
+.dropdown:hover .dropdown-btn {
+    color: rgb(95, 239, 250);
+    font-weight: 700;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1e293b;
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border: 1px solid #334155;
+    border-radius: 6px;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #94a3b8;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.95rem;
+    text-align: left;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: #3182ce;
+    color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==========================================
+   PERFIL
+   ========================================== */
+
+.profile-section {
+    padding: 3rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.profile-img img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3182ce;
+    box-shadow: 0 10px 25px rgba(49, 130, 206, 0.2);
+}
+
+.profile-info h1 {
+    font-size: 2rem;
+    color: #55bfed;
+    margin-bottom: 1rem;
+}
+
+.profile-bio {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    color: #cbd5e1;
+    font-size: 1.05rem;
+}
+
+.profile-datos {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    color: #94a3b8;
+}
+
+.profile-datos li {
+    margin-bottom: 0.5rem;
+}
+
+.profile-datos strong {
+    color: #f8fafc;
+}
+
+.profile-socials {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.profile-socials a {
+    color: #dce2e9;
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+}
+
+.profile-socials a:hover {
+    color: #38bdf8;
+    transform: translateY(-3px);
+    filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.5));
+}
+
+/* ==========================================
+   HABILIDADES
+   ========================================== */
+
+.profile-section h2 {
+    font-size: 1.8rem;
+    color: #3182ce;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 0.8rem;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.profile-box {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-box:hover {
+    transform: translateY(-5px);
+    border-color: #3182ce;
+}
+
+.profile-box h3 {
+    color: #55bfed;
+    margin-bottom: 0.5rem;
+}
+
+.profile-box p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+/* ==========================================
+   LISTAS (PELÍCULAS Y DISCOS)
+   ========================================== */
+
+.profile-lista {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.profile-lista li {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.8rem;
+    color: #e2e8f0;
+    text-align: center;
+    transition: border-color 0.3s ease;
+}
+
+.profile-lista li:hover {
+    border-color: #3182ce;
+}
+
+/* ==========================================
+   RELOJ (FUNCIÓN DINÁMICA)
+   ========================================== */
+
+.reloj {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #38bdf8;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+.footer-bottom {
+    width: 100%;
+    background-color: #141421;
+    border-top: 1px solid #2e2e4c;
+    padding: 20px 0;
+    color: #40d3f1;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-col {
+    display: flex;
+    align-items: center;
+}
+
+.footer-info a,
+.footer-nav a {
+    color: #40d3f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-info a:hover,
+.footer-nav a:hover {
+    color: #ffffff;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-socials a {
+    color: #dce2e9;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #38bdf8;
+    transform: translateY(-3px);
+}
+
+/* ==========================================
+   MEDIA QUERIES (BREAKPOINTS)
+   ========================================== */
+
+/* 400px en adelante */
+@media (min-width: 400px) {
+    .header {
+        padding: 1rem 1.5rem;
+    }
+    .logo {
+        font-size: 1.4rem;
+    }
+    .nav {
+        gap: 1rem;
+    }
+    .profile-info h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* 900px en adelante */
+@media (min-width: 900px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+    .nav {
+        width: auto;
+        justify-content: flex-end;
+        gap: 1.2rem;
+    }
+    .dropdown-content {
+        left: auto;
+        right: 0;
+        transform: none;
+    }
+    .profile-container {
+        flex-direction: row;
+        text-align: left;
+    }
+    .profile-info {
+        flex: 1;
+    }
+    .profile-socials {
+        justify-content: flex-start;
+    }
+}
+
+/* 1200px en adelante */
+@media (min-width: 1200px) {
+    .header {
+        padding: 1rem 3rem;
+    }
+    .nav {
+        gap: 1.8rem;
+    }
+    .profile-info h1 {
+        font-size: 2.5rem;
+    }
+}
