@@ -59,3 +59,25 @@ if (menuToggle && navMenu) {
         }
     });
 }
+
+// ==========================================
+// SALUDO SEGÚN LA HORA
+// ==========================================
+
+function actualizarSaludo() {
+    const hora = new Date().getHours();
+    const saludo = document.getElementById("saludo");
+
+    if (!saludo) return;
+
+    if (hora < 12) {
+        saludo.textContent = "🌅 Buenos días";
+    } else if (hora < 19) {
+        saludo.textContent = "☀️ Buenas tardes";
+    } else {
+        saludo.textContent = "🌙 Buenas noches";
+    }
+}
+
+actualizarSaludo();
+

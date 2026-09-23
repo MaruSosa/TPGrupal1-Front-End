@@ -196,8 +196,9 @@ body {
 }
 
 /* ===================================================
-   3. HERO BANNER Y SECCIONES GENERALEZ
+   3. HERO BANNER
    =================================================== */
+
 .hero-banner {
   min-height: 100vh;
   display: flex;
@@ -206,7 +207,7 @@ body {
   align-items: center;
 
   background:
-    linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.75)),
+    linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)),
     url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1350&q=80")
       center/cover no-repeat;
   color: var(--text-color);
@@ -214,21 +215,66 @@ body {
   text-align: center;
 }
 
-.hero-content h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: #1a9dd5;
+.hero-content {
+  max-width: 900px;
 }
 
-.hero-content .subtitle {
-  font-size: 1.3rem;
-  color: var(--text-muted);
-  margin-bottom: 0.5rem;
+.hero-content .saludo {
+  display: inline-block;
+  background: rgba(49, 130, 206, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  border-radius: 50px;
+  padding: 0.6rem 1.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #38bdf8;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+  animation: fadeIn 0.8s ease-in-out;
 }
 
-.hero-content .proposito {
-  font-size: 1.1rem;
-  color: #dbe2ea;
+.hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #38bdf8, #3182ce, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  color: #cbd5e1;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(49, 130, 206, 0.2);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  color: #38bdf8;
+  animation: fadeIn 1.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .section-title {
@@ -244,7 +290,6 @@ body {
 .section-title p {
   color: var(--text-muted);
 }
-
 /* ===================================================
    4. CARRUSEL Y TARJETAS DE EQUIPO
    =================================================== */
