@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitácora - TechArg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ENCABEZADO / NAVEGACIÓN -->
+    <header class="header">
+      <div class="logo">
+        <span>TechArg</span>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#equipo">Nosotros</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="bitacora.html" class="active">Bitácora</a>
+        <a href="index.html#habilidades">Habilidades</a>
+        <div class="dropdown">
+          <a href="index.html#equipo" class="dropdown-btn">Perfiles ▾</a>
+          <div class="dropdown-content">
+            <a href="mariana.html">Mariana Sosa</a>
+            <a href="miguel.html">Miguel Marcaida</a>
+            <a href="integrante3.html">Nombre 3</a>
+            <a href="integrante4.html">Nombre 4</a>
+            <a href="integrante5.html">Nombre 5</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- BITÁCORA -->
+    <main>
+      <section class="profile-section">
+        <h2>📓 Bitácora del Equipo</h2>
+
+        <div class="profile-container">
+          <h3>Decisiones</h3>
+          <ul class="profile-lista">
+            <li>Elegimos el nombre <strong>TechArg</strong> para el equipo.</li>
+            <li>Decidimos usar una paleta oscura con acentos azules.</li>
+            <li>
+              Cada integrante tendría su propio CSS para no mezclar estilos.
+            </li>
+            <li>
+              La portada tendría un carrusel con las tarjetas de cada perfil.
+            </li>
+          </ul>
+        </div>
+
+        <div class="profile-container">
+          <h3>Dificultades</h3>
+          <ul class="profile-lista">
+            <li>Coordinar los horarios de reunión del grupo.</li>
+            <li>Organizar las carpetas de imágenes para que no se mezclen.</li>
+            <li>Resolver conflictos de Git al mergear las ramas.</li>
+          </ul>
+        </div>
+
+        <div class="profile-container">
+          <h3>Cambios</h3>
+          <ul class="profile-lista">
+            <li>Separamos las imágenes por integrante en subcarpetas.</li>
+            <li>Agregamos funciones dinámicas extra en cada perfil.</li>
+            <li>
+              Mejoramos el diseño de las tarjetas con hover y transiciones.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Columna 1: Logo + descripción -->
+        <div class="footer-col">
+          <h3>TechArg</h3>
+          <p>Equipo de desarrollo web - DSWF 2026</p>
+        </div>
+
+        <!-- Columna 2: Navegación -->
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#equipo">Equipo</a></li>
+            <li><a href="bitacora.html">Bitácora</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Redes -->
+        <div class="footer-col">
+          <h4>Seguinos</h4>
+          <div class="footer-socials">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-copy">
+        <p>2026 © TechArg - Todos los derechos reservados</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

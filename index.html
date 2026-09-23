@@ -28,13 +28,17 @@
       <div class="logo">
         <span>TechArg</span>
       </div>
-      <nav class="nav">
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="nav" id="navMenu">
         <a href="index.html" class="active">Inicio</a>
         <a href="#equipo">Nosotros</a>
         <a href="#contacto">Contacto</a>
         <a href="bitacora.html">Bitácora</a>
         <a href="#habilidades">Habilidades</a>
-        <!-- Submenú desplegable para los 5 integrantes -->
         <div class="dropdown">
           <a href="#equipo" class="dropdown-btn">Perfiles ▾</a>
           <div class="dropdown-content">
@@ -52,11 +56,12 @@
       <!-- Hero con Imagen de Fondo y Gradiente -->
       <section id="inicio" class="hero-banner">
         <div class="hero-content">
-          <h1>TechArg</h1>
-          <p class="subtitle">
+          <p id="saludo" class="saludo">Cargando...</p>
+          <h1 class="hero-title">TechArg</h1>
+          <p class="hero-subtitle">
             Tecnicatura Superior en Desarrollo de Software a Distancia
           </p>
-          <p class="proposito">Desarrollo de Sistemas Web (Front End)</p>
+          <span class="hero-badge">Desarrollo de Sistemas Web (Front End)</span>
         </div>
       </section>
 
@@ -121,12 +126,12 @@
                 </article>
               </li>
 
-              <!-- Tarjeta 2 -->
+              <!-- Tarjeta 2 - Mariana -->
               <li class="carousel-slide">
                 <article class="card">
                   <img
                     src="img/foto cv.webp"
-                    alt="Integrante 2"
+                    alt="Mariana Sosa"
                     class="card-img"
                   />
                   <h3>Mariana Sosa</h3>
@@ -332,40 +337,41 @@
     </main>
 
     <!-- Pie de Página -->
-    <footer class="footer-bottom">
+    <footer class="footer">
       <div class="footer-container">
-        <!-- Columna 1: Copyright -->
-        <div class="footer-col footer-info">
-          2026 © <a href="#" target="_blank">TechArg</a>
+        <!-- Columna 1: Logo + descripción -->
+        <div class="footer-col">
+          <h3>TechArg</h3>
+          <p>Equipo de desarrollo web - DSWF 2026</p>
         </div>
 
-        <!-- Columna 2: Menú de navegación -->
-        <div class="footer-col footer-nav">
+        <!-- Columna 2: Navegación -->
+        <div class="footer-col">
+          <h4>Navegación</h4>
           <ul>
-            <li><a href="#equipo">Equipo</a></li>
-            <li><a href="#contacto">Contacto</a></li>
             <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="bitacora.html">Bitácora</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </div>
 
         <!-- Columna 3: Redes Sociales -->
-        <div class="footer-col footer-socials">
-          <a href="#" target="_blank" title="Facebook" class="socials-item">
-            <i class="fab fa-facebook-f facebook"></i>
-          </a>
-          <a href="#" target="_blank" title="Twitter" class="socials-item">
-            <i class="fab fa-twitter twitter"></i>
-          </a>
-          <a href="#" target="_blank" title="Instagram" class="socials-item">
-            <i class="fab fa-instagram instagram"></i>
-          </a>
-          <a href="#" target="_blank" title="YouTube" class="socials-item">
-            <i class="fab fa-youtube youtube"></i>
-          </a>
-          <a href="#" target="_blank" title="Telegram" class="socials-item">
-            <i class="fab fa-telegram telegram"></i>
-          </a>
+        <div class="footer-col">
+          <h4>Seguinos</h4>
+          <div class="footer-socials">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+          </div>
         </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-copy">
+        <p>2026 © TechArg - Todos los derechos reservados</p>
       </div>
     </footer>
 

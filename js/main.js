@@ -35,3 +35,49 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('resize', updateCarousel);
     }
 });
+
+
+// ==========================================
+// MENÚ HAMBURGUESA (MOBILE)
+// ==========================================
+
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+
+        // Cambiamos el ícono (barras / equis)
+        const icono = menuToggle.querySelector("i");
+        if (navMenu.classList.contains("open")) {
+            icono.classList.remove("fa-bars");
+            icono.classList.add("fa-times");
+        } else {
+            icono.classList.remove("fa-times");
+            icono.classList.add("fa-bars");
+        }
+    });
+}
+
+// ==========================================
+// SALUDO SEGÚN LA HORA
+// ==========================================
+
+function actualizarSaludo() {
+    const hora = new Date().getHours();
+    const saludo = document.getElementById("saludo");
+
+    if (!saludo) return;
+
+    if (hora < 12) {
+        saludo.textContent = "🌅 Buenos días";
+    } else if (hora < 19) {
+        saludo.textContent = "☀️ Buenas tardes";
+    } else {
+        saludo.textContent = "🌙 Buenas noches";
+    }
+}
+
+actualizarSaludo();
+
