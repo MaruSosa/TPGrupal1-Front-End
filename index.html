@@ -25,28 +25,32 @@
   <body>
     <!-- Encabezado / Navegación -->
     <header class="header">
-      <div class="logo">
+    <div class="logo">
         <span>TechArg</span>
-      </div>
-      <nav class="nav">
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <nav class="nav" id="navMenu">
         <a href="index.html" class="active">Inicio</a>
         <a href="#equipo">Nosotros</a>
         <a href="#contacto">Contacto</a>
         <a href="bitacora.html">Bitácora</a>
         <a href="#habilidades">Habilidades</a>
-        <!-- Submenú desplegable para los 5 integrantes -->
         <div class="dropdown">
-          <a href="#equipo" class="dropdown-btn">Perfiles ▾</a>
-          <div class="dropdown-content">
-            <a href="mariana.html">Mariana Sosa</a>
-            <a href="miguel.html">Miguel Marcaida</a>
-            <a href="integrante3.html">Nombre 3</a>
-            <a href="integrante4.html">Nombre 4</a>
-            <a href="integrante5.html">Nombre 5</a>
-          </div>
+            <a href="#equipo" class="dropdown-btn">Perfiles ▾</a>
+            <div class="dropdown-content">
+                <a href="mariana.html">Mariana Sosa</a>
+                <a href="miguel.html">Miguel Marcaida</a>
+                <a href="integrante3.html">Nombre 3</a>
+                <a href="integrante4.html">Nombre 4</a>
+                <a href="integrante5.html">Nombre 5</a>
+            </div>
         </div>
-      </nav>
-    </header>
+    </nav>
+</header>
 
     <main>
       <!-- Hero con Imagen de Fondo y Gradiente -->

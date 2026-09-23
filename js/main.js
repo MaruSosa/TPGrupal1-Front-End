@@ -35,3 +35,27 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('resize', updateCarousel);
     }
 });
+
+
+// ==========================================
+// MENÚ HAMBURGUESA (MOBILE)
+// ==========================================
+
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+
+        // Cambiamos el ícono (barras / equis)
+        const icono = menuToggle.querySelector("i");
+        if (navMenu.classList.contains("open")) {
+            icono.classList.remove("fa-bars");
+            icono.classList.add("fa-times");
+        } else {
+            icono.classList.remove("fa-times");
+            icono.classList.add("fa-bars");
+        }
+    });
+}
