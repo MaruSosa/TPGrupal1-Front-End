@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Marcaida - TechArg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO / NAVEGACIÓN -->
+    <header class="header">
+        <div class="logo">
+            <span>TechArg</span>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#equipo">Nosotros</a>
+            <a href="index.html#contacto">Contacto</a>
+            <a href="bitacora.html">Bitácora</a>
+            <a href="index.html#habilidades">Habilidades</a>
+            <div class="dropdown">
+                <a href="index.html#equipo" class="dropdown-btn active">Perfiles ▾</a>
+                <div class="dropdown-content">
+                    <a href="mariana.html">Mariana Sosa</a>
+                    <a href="miguel.html">Miguel Marcaida</a>
+                    <a href="integrante3.html">Nombre 3</a>
+                    <a href="integrante4.html">Nombre 4</a>
+                    <a href="integrante5.html">Nombre 5</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PERFIL -->
+    <main>
+        <section class="profile-section">
+            <div class="profile-container">
+
+                <!-- Foto / Avatar -->
+                <div class="profile-img">
+                    <img src="img/avatar-miguel.png" alt="Avatar de Miguel Marcaida">
+                </div>
+
+                <!-- Datos -->
+                <div class="profile-info">
+                    <h1>Miguel Angel Marcaida Marquez</h1>
+
+                    <p class="profile-bio">
+                        Hola, soy Miguel. Estoy cursando la Tecnicatura en Desarrollo de Software 
+                        y me interesa el desarrollo web. Me gusta aprender nuevas tecnologías y 
+                        trabajar en equipo para crear soluciones funcionales.
+                    </p>
+
+                    <ul class="profile-datos">
+                        <li><strong>Ciudad:</strong> Tucumán, Argentina</li>
+                        <li><strong>Edad:</strong> 39 años</li>
+                        <li><strong>Email:</strong> miguelangelmarcaida@gmail.com</li>
+                    </ul>
+
+                    <div class="profile-socials">
+                        <a href="https://github.com/Miguel-Marcaida" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/miguel-marcaida" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/miguelmarcaida" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section class="profile-section">
+            <h2>Habilidades</h2>
+            <div class="profile-grid">
+                <div class="profile-box">
+                    <h3>HTML5</h3>
+                    <p>Estructura semántica y accesible.</p>
+                </div>
+                <div class="profile-box">
+                    <h3>CSS3</h3>
+                    <p>Flexbox, Grid, responsive y animaciones.</p>
+                </div>
+                <div class="profile-box">
+                    <h3>JavaScript</h3>
+                    <p>DOM, eventos, arrays y funciones.</p>
+                </div>
+                <div class="profile-box">
+                    <h3>C# / .NET</h3>
+                    <p>Desarrollo backend y aplicaciones de escritorio.</p>
+                </div>
+                <div class="profile-box">
+                    <h3>Python</h3>
+                    <p>Automatización y scripts.</p>
+                </div>
+                <div class="profile-box">
+                    <h3>Java</h3>
+                    <p>Programación orientada a objetos.</p>
+                </div>
+                <div class="profile-box">
+                    <h3>SQL / MySQL</h3>
+                    <p>Bases de datos relacionales.</p>
+                </div>
+                <div class="profile-box">
+                    <h3>Git y GitHub</h3>
+                    <p>Control de versiones y trabajo colaborativo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PELÍCULAS FAVORITAS -->
+        <section class="profile-section">
+            <h2>Películas favoritas</h2>
+            <ul class="profile-lista">
+                <li>Batman: El Caballero de la Noche</li>
+                <li>La Guerra de los Mundos</li>
+                <li>Transformers 4</li>
+            </ul>
+        </section>
+
+        <!-- DISCOS FAVORITOS -->
+        <section class="profile-section">
+            <h2>Discos favoritos</h2>
+            <ul class="profile-lista">
+                <li>La Mona Jiménez</li>
+                <li>El Chaqueño Palavecino</li>
+                <li>Rodrigo / Ulises Bueno</li>
+            </ul>
+        </section>
+
+        <!-- FUNCIÓN DINÁMICA: RELOJ -->
+        <section class="profile-section">
+            <h2>Reloj en tiempo real</h2>
+            <p id="reloj" class="reloj">Cargando...</p>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer-bottom">
+        <div class="footer-container">
+            <div class="footer-col footer-info">
+                2026 © <a href="index.html">TechArg</a>
+            </div>
+            <div class="footer-col footer-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#equipo">Equipo</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-socials">
+                <a href="https://github.com/Miguel-Marcaida" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/miguel-marcaida" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/miguel.js"></script>
+</body>
+</html>
