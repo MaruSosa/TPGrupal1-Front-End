@@ -1,380 +1,310 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portada - Equipo de Desarrollo</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <!-- Encabezado / Navegación -->
-    <header class="header">
-      <div class="logo">
-        <span>TechArg</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portada - Equipo de Desarrollo</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+   <link rel="shortcut icon" href="img/ifts.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Encabezado / Navegación -->
+  <header class="header">
+    <div class="logo">
+    <span><img src="img/sergio/ifts.png" alt="" width="40px"></span>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav class="nav" id="navMenu">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="#equipo">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+      <a href="bitacora.html">Bitácora</a>
+      <a href="#habilidades">Habilidades</a>
+      <div class="dropdown">
+        <a href="#equipo" class="dropdown-btn">Perfiles ▾</a>
+        <div class="dropdown-content">
+          <a href="mariana.html">Mariana Sosa</a>
+          <a href="miguel.html">Miguel Marcaida</a>
+          <a href="integrante3.html">Nombre 3</a>
+          <a href="sergio.html">Sergio Cesar Barrientos</a>
+          <a href="integrante5.html">Nombre 5</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero con Imagen de Fondo y Gradiente -->
+    <section id="inicio" class="hero-banner">
+      <div class="hero-content">
+        <p id="saludo" class="saludo">Cargando...</p>
+        <h1 class="hero-title">TechArg</h1>
+         <img src="img/sergio/ifts.png" alt="">
+        <p class="hero-subtitle">
+          Tecnicatura Superior en Desarrollo de Software a Distancia
+        </p>
+        <span class="hero-badge">Desarrollo de Sistemas Web (Front End)</span>
+      </div>
+    </section>
+
+    <!-- Sección Equipo con Carrusel Interactivo -->
+    <section id="equipo" class="container team-section">
+      <div class="section-title">
+        <h2>Nuestro Equipo</h2>
+        <p>Conoce a los integrantes del grupo</p>
       </div>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-        <i class="fas fa-bars"></i>
-      </button>
+      <!-- Carrusel -->
+      <div class="carousel-container">
+        <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Anterior">
+          &#10094;
+        </button>
 
-      <nav class="nav" id="navMenu">
-        <a href="index.html" class="active">Inicio</a>
-        <a href="#equipo">Nosotros</a>
-        <a href="#contacto">Contacto</a>
-        <a href="bitacora.html">Bitácora</a>
-        <a href="#habilidades">Habilidades</a>
-        <div class="dropdown">
-          <a href="#equipo" class="dropdown-btn">Perfiles ▾</a>
-          <div class="dropdown-content">
-            <a href="mariana.html">Mariana Sosa</a>
-            <a href="miguel.html">Miguel Marcaida</a>
-            <a href="integrante3.html">Nombre 3</a>
-            <a href="integrante4.html">Nombre 4</a>
-            <a href="integrante5.html">Nombre 5</a>
-          </div>
-        </div>
-      </nav>
-    </header>
+        <div class="carousel-track-container">
+          <ul class="carousel-track" id="carouselTrack">
+            <!-- Tarjeta 1 - Miguel -->
+            <li class="carousel-slide current-slide">
+              <article class="card">
+                <img src="img/miguel/avatar-miguel.png" alt="Miguel Marcaida" class="card-img" />
+                <h3>Miguel Marcaida</h3>
+                <p class="role">Desarrollador Front End</p>
+                <div class="card-links">
+                  <a href="miguel.html" class="btn-profile">Ver Perfil</a>
+                </div>
+                <div class="card-socials">
+                  <a href="https://github.com/Miguel-Marcaida" target="_blank" title="GitHub" class="socials-item">
+                    <i class="fab fa-github github"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/miguel-marcaida" target="_blank" title="LinkedIn"
+                    class="socials-item">
+                    <i class="fab fa-linkedin-in linkedin"></i>
+                  </a>
+                  <a href="https://www.instagram.com/miguelmarcaida" target="_blank" title="Instagram"
+                    class="socials-item">
+                    <i class="fab fa-instagram instagram"></i>
+                  </a>
+                </div>
+              </article>
+            </li>
 
-    <main>
-      <!-- Hero con Imagen de Fondo y Gradiente -->
-      <section id="inicio" class="hero-banner">
-        <div class="hero-content">
-          <p id="saludo" class="saludo">Cargando...</p>
-          <h1 class="hero-title">TechArg</h1>
-          <p class="hero-subtitle">
-            Tecnicatura Superior en Desarrollo de Software a Distancia
-          </p>
-          <span class="hero-badge">Desarrollo de Sistemas Web (Front End)</span>
-        </div>
-      </section>
+            <!-- Tarjeta 2 - Mariana -->
+            <li class="carousel-slide">
+              <article class="card">
+                <img src="img/foto cv.webp" alt="Mariana Sosa" class="card-img" />
+                <h3>Mariana Sosa</h3>
+                <p class="role">Diseñadora Web</p>
+                <div class="card-links">
+                  <a href="mariana.html" class="btn-profile">Ver Perfil</a>
+                </div>
+                <!-- CONTENEDOR DE REDES SOCIALES -->
+                <div class="card-socials">
+                  <a href="https://www.facebook.com/mariana.sosa.5015" target="_blank" title="Facebook"
+                    class="socials-item">
+                    <i class="fab fa-facebook-f facebook"></i>
+                  </a>
+                  <a href="https://github.com/MaruSosa" target="_blank" title="GitHub" class="socials-item">
+                    <i class="fab fa-github github"></i>
+                  </a>
+                  <a href="https://www.instagram.com/maruu_sosa/?hl=es" target="_blank" title="Instagram"
+                    class="socials-item">
+                    <i class="fab fa-instagram instagram"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/mariana-sosa-0b2378185/" target="_blank" title="LinkedIn"
+                    class="socials-item">
+                    <i class="fab fa-linkedin-in linkedin"></i>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <!-- Tarjeta 3 -->
+            <li class="carousel-slide current-slide">
+              <article class="card">
+                <img src="img/avatar1.png" alt="Integrante 1" class="card-img" />
+                <h3>Nombre Integrante 3</h3>
+                <p class="role">Desarrollador Front End</p>
+                <div class="card-links">
+                  <a href="perfil-integrante1.html" class="btn-profile">Ver Perfil</a>
+                  <a href="https://github.com/usuario1" target="_blank" rel="noopener noreferrer"
+                    class="btn-github">GitHub</a>
+                </div>
+              </article>
+            </li>
+            <!-- Tarjeta 4 -->
+            <li class="carousel-slide current-slide">
+              <article class="card">
+                <img src="img/sergio/yo.png" alt="Integrante 1" class="card-img" />
+                <h3>Sergio Cesar Barrientos</h3>
+                <p class="role">Desarrollador Front End</p>
 
-      <!-- Sección Equipo con Carrusel Interactivo -->
-      <section id="equipo" class="container team-section">
-        <div class="section-title">
-          <h2>Nuestro Equipo</h2>
-          <p>Conoce a los integrantes del grupo</p>
-        </div>
+                <div class="card-links">
+                  <a href="sergio.html" class="btn-profile ">Ver Perfil</a>
+                </div>
+                
+                <div class="card-socials">
 
-        <!-- Carrusel -->
-        <div class="carousel-container">
-          <button
-            class="carousel-btn prev-btn"
-            id="prevBtn"
-            aria-label="Anterior"
-          >
-            &#10094;
-          </button>
+                  <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"
+                    class="socials-item">
+                    <i class="fab fa-linkedin-in linkedin"></i>
 
-          <div class="carousel-track-container">
-            <ul class="carousel-track" id="carouselTrack">
-              <!-- Tarjeta 1 - Miguel -->
-              <li class="carousel-slide current-slide">
-                <article class="card">
-                  <img
-                    src="img/miguel/avatar-miguel.png"
-                    alt="Miguel Marcaida"
-                    class="card-img"
-                  />
-                  <h3>Miguel Marcaida</h3>
-                  <p class="role">Desarrollador Front End</p>
-                  <div class="card-links">
-                    <a href="miguel.html" class="btn-profile">Ver Perfil</a>
-                  </div>
-                  <div class="card-socials">
-                    <a
-                      href="https://github.com/Miguel-Marcaida"
-                      target="_blank"
-                      title="GitHub"
-                      class="socials-item"
-                    >
+                    <a href="https://github.com/SergioCesarBarrientos" target="_blank" title="GitHub"
+                      class="socials-item">
                       <i class="fab fa-github github"></i>
                     </a>
-                    <a
-                      href="https://www.linkedin.com/in/miguel-marcaida"
-                      target="_blank"
-                      title="LinkedIn"
-                      class="socials-item"
-                    >
-                      <i class="fab fa-linkedin-in linkedin"></i>
-                    </a>
-                    <a
-                      href="https://www.instagram.com/miguelmarcaida"
-                      target="_blank"
-                      title="Instagram"
-                      class="socials-item"
-                    >
-                      <i class="fab fa-instagram instagram"></i>
-                    </a>
-                  </div>
-                </article>
-              </li>
 
-              <!-- Tarjeta 2 - Mariana -->
-              <li class="carousel-slide">
-                <article class="card">
-                  <img
-                    src="img/foto cv.webp"
-                    alt="Mariana Sosa"
-                    class="card-img"
-                  />
-                  <h3>Mariana Sosa</h3>
-                  <p class="role">Diseñadora Web</p>
-                  <div class="card-links">
-                    <a href="mariana.html" class="btn-profile">Ver Perfil</a>
-                  </div>
-                  <!-- CONTENEDOR DE REDES SOCIALES -->
-                  <div class="card-socials">
-                    <a
-                      href="https://www.facebook.com/mariana.sosa.5015"
-                      target="_blank"
-                      title="Facebook"
-                      class="socials-item"
-                    >
-                      <i class="fab fa-facebook-f facebook"></i>
-                    </a>
-                    <a
-                      href="https://github.com/MaruSosa"
-                      target="_blank"
-                      title="GitHub"
-                      class="socials-item"
-                    >
-                      <i class="fab fa-github github"></i>
-                    </a>
-                    <a
-                      href="https://www.instagram.com/maruu_sosa/?hl=es"
-                      target="_blank"
-                      title="Instagram"
-                      class="socials-item"
-                    >
-                      <i class="fab fa-instagram instagram"></i>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/mariana-sosa-0b2378185/"
-                      target="_blank"
-                      title="LinkedIn"
-                      class="socials-item"
-                    >
-                      <i class="fab fa-linkedin-in linkedin"></i>
-                    </a>
-                  </div>
-                </article>
-              </li>
-              <!-- Tarjeta 3 -->
-              <li class="carousel-slide current-slide">
-                <article class="card">
-                  <img
-                    src="img/avatar1.png"
-                    alt="Integrante 1"
-                    class="card-img"
-                  />
-                  <h3>Nombre Integrante 3</h3>
-                  <p class="role">Desarrollador Front End</p>
-                  <div class="card-links">
-                    <a href="perfil-integrante1.html" class="btn-profile"
-                      >Ver Perfil</a
-                    >
-                    <a
-                      href="https://github.com/usuario1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="btn-github"
-                      >GitHub</a
-                    >
-                  </div>
-                </article>
-              </li>
-              <!-- Tarjeta 4 -->
-              <li class="carousel-slide current-slide">
-                <article class="card">
-                  <img
-                    src="img/avatar1.png"
-                    alt="Integrante 1"
-                    class="card-img"
-                  />
-                  <h3>Nombre Integrante 4</h3>
-                  <p class="role">Desarrollador Front End</p>
-                  <div class="card-links">
-                    <a href="perfil-integrante1.html" class="btn-profile"
-                      >Ver Perfil</a
-                    >
-                    <a
-                      href="https://github.com/usuario1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="btn-github"
-                      >GitHub</a
-                    >
-                  </div>
-                </article>
-              </li>
-              <!-- Tarjeta 5 -->
-              <li class="carousel-slide current-slide">
-                <article class="card">
-                  <img
-                    src="img/avatar1.png"
-                    alt="Integrante 1"
-                    class="card-img"
-                  />
-                  <h3>Nombre Integrante 5</h3>
-                  <p class="role">Desarrollador Front End</p>
-                  <div class="card-links">
-                    <a href="perfil-integrante1.html" class="btn-profile"
-                      >Ver Perfil</a
-                    >
-                    <a
-                      href="https://github.com/usuario1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="btn-github"
-                      >GitHub</a
-                    >
-                  </div>
-                </article>
-              </li>
-            </ul>
-          </div>
 
-          <button
-            class="carousel-btn next-btn"
-            id="nextBtn"
-            aria-label="Siguiente"
-          >
-            &#10095;
-          </button>
-        </div>
-      </section>
-
-      <!-- Sección de Habilidades/Servicios del Equipo -->
-      <section id="habilidades" class="services-section">
-        <div class="section-title">
-          <h2>Habilidades</h2>
-          <p>Nos destacamos por nuestras habilidades</p>
-        </div>
-        <div class="container">
-          <div class="services-grid">
-            <div class="service-box">
-              <h3>🎨 Maquetación HTML & CSS</h3>
-              <p>
-                Diseño estructurado, semántico y adaptable a cualquier pantalla.
-              </p>
-            </div>
-            <div class="service-box">
-              <h3>⚡ Lógica con JavaScript</h3>
-              <p>
-                Interacciones dinámicas en el navegador sin recargar la página.
-              </p>
-            </div>
-            <div class="service-box">
-              <h3>📱 Responsive Design</h3>
-              <p>Optimizado para breakpoints de 400px, 900px y 1200px.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Sección de de contacto con el Equipo -->
-      <section class="section-title">
-        <h2>Contáctenos</h2>
-      </section>
-      <section id="contacto" class="contact-section">
-        <div class="contact-container">
-          <!-- Columna Izquierda: Información de contacto -->
-          <div class="contact-info">
-            <h2>INFORMACIÓN DE CONTACTO</h2>
-            <p class="contact-desc">
-              Si tienes alguna duda o quieres coordinar un proyecto con nuestro
-              equipo, envíanos un mensaje.
-            </p>
-
-            <div class="info-details">
-              <p><strong>Email:</strong> info.contact@gmail.com</p>
-              <p><strong>Teléfono:</strong> +1(585) 902-8665</p>
-            </div>
-          </div>
-
-          <!-- Columna Derecha: Formulario -->
-          <form class="contact-form">
-            <div class="form-group">
-              <label for="nombres">Nombres *</label>
-              <input type="text" id="nombres" required />
-            </div>
-
-            <div class="form-group">
-              <label for="telefono">Teléfono / Celular</label>
-              <input type="tel" id="telefono" />
-            </div>
-
-            <div class="form-group">
-              <label for="email">Correo electrónico *</label>
-              <input type="email" id="email" required />
-            </div>
-
-            <div class="form-group">
-              <label for="mensaje">Mensaje *</label>
-              <textarea id="mensaje" rows="4" required></textarea>
-            </div>
-
-            <button type="submit" class="btn-submit">Enviar Mensaje</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <!-- Pie de Página -->
-    <footer class="footer">
-      <div class="footer-container">
-        <!-- Columna 1: Logo + descripción -->
-        <div class="footer-col">
-          <h3>TechArg</h3>
-          <p>Equipo de desarrollo web - DSWF 2026</p>
-        </div>
-
-        <!-- Columna 2: Navegación -->
-        <div class="footer-col">
-          <h4>Navegación</h4>
-          <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#equipo">Equipo</a></li>
-            <li><a href="bitacora.html">Bitácora</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+                </div>
+              </article>
+            </li>
+            <!-- Tarjeta 5 -->
+            <li class="carousel-slide current-slide">
+              <article class="card">
+                <img src="img/avatar1.png" alt="Integrante 1" class="card-img" />
+                <h3>Nombre Integrante 5</h3>
+                <p class="role">Desarrollador Front End</p>
+                <div class="card-links">
+                  <a href="perfil-integrante1.html" class="btn-profile">Ver Perfil</a>
+                  <a href="https://github.com/usuario1" target="_blank" rel="noopener noreferrer"
+                    class="btn-github">GitHub</a>
+                </div>
+              </article>
+            </li>
           </ul>
         </div>
 
-        <!-- Columna 3: Redes Sociales -->
-        <div class="footer-col">
-          <h4>Seguinos</h4>
-          <div class="footer-socials">
-            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+        <button class="carousel-btn next-btn" id="nextBtn" aria-label="Siguiente">
+          &#10095;
+        </button>
+      </div>
+    </section>
+
+    <!-- Sección de Habilidades/Servicios del Equipo -->
+    <section id="habilidades" class="services-section">
+      <div class="section-title">
+        <h2>Habilidades</h2>
+        <p>Nos destacamos por nuestras habilidades</p>
+      </div>
+      <div class="container">
+        <div class="services-grid">
+          <div class="service-box">
+            <h3>🎨 Maquetación HTML & CSS</h3>
+            <p>
+              Diseño estructurado, semántico y adaptable a cualquier pantalla.
+            </p>
+          </div>
+          <div class="service-box">
+            <h3>⚡ Lógica con JavaScript</h3>
+            <p>
+              Interacciones dinámicas en el navegador sin recargar la página.
+            </p>
+          </div>
+          <div class="service-box">
+            <h3>📱 Responsive Design</h3>
+            <p>Optimizado para breakpoints de 400px, 900px y 1200px.</p>
           </div>
         </div>
       </div>
+    </section>
+    <!-- Sección de de contacto con el Equipo -->
+    <section class="section-title">
+      <h2>Contáctenos</h2>
+    </section>
+    <section id="contacto" class="contact-section">
+      <div class="contact-container">
+        <!-- Columna Izquierda: Información de contacto -->
+        <div class="contact-info">
+          <h2>INFORMACIÓN DE CONTACTO</h2>
+          <p class="contact-desc">
+            Si tienes alguna duda o quieres coordinar un proyecto con nuestro
+            equipo, envíanos un mensaje.
+          </p>
 
-      <!-- Copyright -->
-      <div class="footer-copy">
-        <p>2026 © TechArg - Todos los derechos reservados</p>
+          <div class="info-details">
+            <p><strong>Email:</strong> info.contact@gmail.com</p>
+            <p><strong>Teléfono:</strong> +1(585) 902-8665</p>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Formulario -->
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="nombres">Nombres *</label>
+            <input type="text" id="nombres" required />
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono / Celular</label>
+            <input type="tel" id="telefono" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico *</label>
+            <input type="email" id="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Enviar Mensaje</button>
+        </form>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Pie de Página -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Columna 1: Logo + descripción -->
+      <div class="footer-col">
+        <h3>TechArg</h3>
+        <p>Equipo de desarrollo web - DSWF 2026</p>
+      </div>
+
+      <!-- Columna 2: Navegación -->
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="bitacora.html">Bitácora</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Redes Sociales -->
+      <div class="footer-col">
+        <h4>Seguinos</h4>
+        <div class="footer-socials">
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copy">
+      <p>2026 © TechArg - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>

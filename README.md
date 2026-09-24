@@ -13,7 +13,7 @@ Incluye una portada con la presentación del equipo, perfiles individuales de ca
 | Mariana Sosa | [@MaruSosa](https://github.com/MaruSosa) |
 | Miguel Marcaida | [@Miguel-Marcaida](https://github.com/Miguel-Marcaida) |
 | Caro [Apellido] | [@usuario](https://github.com/usuario) |
-| Sergio [Apellido] | [@usuario](https://github.com/usuario) |
+| Sergio Cesar Barrientos | [@SergioCesarBarrientos](https://github.com/SergioCesarBarrientos) |
 | Karina [Apellido] | [@usuario](https://github.com/usuario) |
 
 ---
@@ -93,6 +93,13 @@ TPGrupal1-Front-End/
 | **"Ver top 3..." en discos** | Muestra los 3 temas favoritos de cada artista. |
 
 ### Perfil de Mariana (`mariana.html`)
+
+*(Pendiente de documentar)*
+
+---
+
+
+### Perfil de Sergio (`sergio.html`)
 
 *(Pendiente de documentar)*
 
