@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carolina Silva Cotto - TechArg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="css/carolina.css" />
+  <link rel="shortcut icon" href="img/sergio/ifts.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- ENCABEZADO / NAVEGACIÓN (mismo patrón que las demás páginas, para navegar sin usar el botón Atrás) -->
+  <header class="header">
+    <div class="logo">
+      <span>TechArg</span>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Inicio</a>
+      <a href="index.html#equipo">Nosotros</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="bitacora.html">Bitácora</a>
+      <a href="index.html#habilidades">Habilidades</a>
+      <div class="dropdown">
+        <a href="index.html#equipo" class="dropdown-btn active">Perfiles ▾</a>
+        <div class="dropdown-content">
+          <a href="mariana.html">Mariana Sosa</a>
+          <a href="miguel.html">Miguel Marcaida</a>
+          <a href="carolina.html">Carolina Silva Cotto</a>
+          <a href="sergio.html">Sergio Cesar Barrientos</a>
+          <a href="integrante5.html">Nombre 5</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO (inspirado en la presentación de Mariana) -->
+    <section id="inicio" class="hero-mini">
+      <div class="hero-mini-content">
+        <p class="hero-saludo">Hola, soy</p>
+        <h1>Carolina Silva Cotto</h1>
+        <h2>Estudiante de la Tecnicatura en Desarrollo de Software</h2>
+        <p class="hero-description">
+          Me interesa el testing, las metodologías ágiles y el desarrollo web.
+          Me gusta trabajar en equipo y aprender viendo cómo funcionan las cosas.
+        </p>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ / DATOS (estructura de tarjeta de Miguel) -->
+    <section class="profile-section">
+      <div class="profile-container">
+        <!-- Avatar temporal con iniciales, a reemplazar por una foto o mascota -->
+        <div class="profile-img">
+          <div class="avatar-placeholder" aria-label="Avatar de Carolina Silva Cotto">CS</div>
+        </div>
+
+        <div class="profile-info">
+          <h1>Carolina Silva Cotto</h1>
+
+          <p class="profile-bio">
+            Hola, soy Caro. Hice cursos de creación de páginas web y de testing manual,
+            y en la tecnicatura vengo trabajando con C# y Python. Me interesan también
+            las metodologías ágiles como Scrum para organizar el trabajo en equipo.
+          </p>
+
+          <ul class="profile-datos">
+            <li><strong>Ciudad:</strong> Campana, Buenos Aires</li>
+            <li><strong>Edad:</strong> 30 años</li>
+          </ul>
+
+          <div class="profile-socials">
+            <a href="https://github.com/csilvacotto-2202" target="_blank" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/carosc_02" target="_blank" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <!-- TODO: reemplazar por la URL real del LinkedIn de Carolina -->
+            <a href="https://www.linkedin.com/in/carolina-silva-cotto" target="_blank" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="profile-section">
+      <h2>Habilidades</h2>
+
+      <div class="profile-grid">
+        <div class="profile-box">
+          <i class="devicon-html5-plain colored"></i>
+          <h3>HTML5</h3>
+          <div class="skill-bar-track" data-percent="85">
+            <div class="skill-bar-fill"></div>
+          </div>
+          <span class="skill-percent">85%</span>
+        </div>
+        <div class="profile-box">
+          <i class="devicon-css3-plain colored"></i>
+          <h3>CSS3</h3>
+          <div class="skill-bar-track" data-percent="80">
+            <div class="skill-bar-fill"></div>
+          </div>
+          <span class="skill-percent">80%</span>
+        </div>
+        <div class="profile-box">
+          <i class="fas fa-vial"></i>
+          <h3>Testing Manual</h3>
+          <div class="skill-bar-track" data-percent="70">
+            <div class="skill-bar-fill"></div>
+          </div>
+          <span class="skill-percent">70%</span>
+        </div>
+        <div class="profile-box">
+          <i class="fas fa-people-arrows"></i>
+          <h3>Scrum / Ágil</h3>
+          <div class="skill-bar-track" data-percent="65">
+            <div class="skill-bar-fill"></div>
+          </div>
+          <span class="skill-percent">65%</span>
+        </div>
+        <div class="profile-box">
+          <i class="devicon-csharp-plain colored"></i>
+          <h3>C#</h3>
+          <div class="skill-bar-track" data-percent="60">
+            <div class="skill-bar-fill"></div>
+          </div>
+          <span class="skill-percent">60%</span>
+        </div>
+        <div class="profile-box">
+          <i class="devicon-python-plain colored"></i>
+          <h3>Python</h3>
+          <div class="skill-bar-track" data-percent="55">
+            <div class="skill-bar-fill"></div>
+          </div>
+          <span class="skill-percent">55%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PELÍCULAS FAVORITAS -->
+    <section class="profile-section">
+      <h2>🎬 Películas favoritas</h2>
+      <div class="cards-grid">
+        <div class="card-item">
+          <i class="fas fa-film"></i>
+          <h3>Volver al futuro</h3>
+          <p>1985 · Robert Zemeckis</p>
+        </div>
+        <div class="card-item">
+          <i class="fas fa-film"></i>
+          <h3>Como si fuera la primera vez</h3>
+          <p>2004 · Peter Segal</p>
+        </div>
+        <div class="card-item">
+          <i class="fas fa-film"></i>
+          <h3>The Truman Show</h3>
+          <p>1998 · Peter Weir</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANDAS / ARTISTAS FAVORITOS + FUNCIÓN DINÁMICA -->
+    <section class="profile-section">
+      <h2>🎵 Cantantes favoritos</h2>
+      <div class="cards-grid" id="musicaGrid">
+        <div class="card-item" data-artista="Callejeros">
+          <i class="fas fa-music"></i>
+          <h3>Callejeros</h3>
+          <p>Rock nacional · Argentina</p>
+        </div>
+        <div class="card-item" data-artista="Michael Jackson">
+          <i class="fas fa-music"></i>
+          <h3>Michael Jackson</h3>
+          <p>Pop · Estados Unidos</p>
+        </div>
+        <div class="card-item" data-artista="Madonna">
+          <i class="fas fa-music"></i>
+          <h3>Madonna</h3>
+          <p>Pop · Estados Unidos</p>
+        </div>
+        <div class="card-item" data-artista="Belinda">
+          <i class="fas fa-music"></i>
+          <h3>Belinda</h3>
+          <p>Pop · México</p>
+        </div>
+        <div class="card-item" data-artista="Cuarteto de Nos">
+          <i class="fas fa-music"></i>
+          <h3>Cuarteto de Nos</h3>
+          <p>Rock alternativo · Uruguay</p>
+        </div>
+        <div class="card-item" data-artista="La Oreja de Van Gogh">
+          <i class="fas fa-music"></i>
+          <h3>La Oreja de Van Gogh</h3>
+          <p>Pop rock · España</p>
+        </div>
+      </div>
+
+      <!-- Función dinámica propia: recomienda un disco/artista al azar -->
+      <div class="disco-random">
+        <button id="btnDiscoRandom" class="btn-random">🎲 Recomendame un disco al azar</button>
+        <p id="resultadoRandom" class="resultado-random"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA (mismo footer compartido del sitio) -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>TechArg</h3>
+        <p>Equipo de desarrollo web - DSWF 2026</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#equipo">Equipo</a></li>
+          <li><a href="bitacora.html">Bitácora</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Seguinos</h4>
+        <div class="footer-socials">
+          <a href="https://github.com/csilvacotto-2202" target="_blank" title="GitHub"><i
+              class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/carosc_02" target="_blank" title="Instagram"><i
+              class="fab fa-instagram"></i></a>
+          <!-- TODO: reemplazar por la URL real del LinkedIn de Carolina -->
+          <a href="https://www.linkedin.com/in/carolina-silva-cotto" target="_blank" title="LinkedIn"><i
+              class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+      <p>2026 © TechArg - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/carolina.js"></script>
+
+</body>
+
+</html>
