@@ -279,6 +279,14 @@ body {
   box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
 }
 
+.profile-img img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3182ce;
+}
+
 .profile-info h1 {
   font-size: 2rem;
   color: #55bfed;
