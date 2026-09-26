@@ -352,6 +352,18 @@ body {
   border: 3px solid var(--primary-color);
 }
 
+/* Avatar temporal con iniciales para integrantes sin foto todavía */
+.card-avatar-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-main);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--primary-color), #55bfed);
+}
+
 .card h3 {
   font-size: 1.3rem;
   margin-bottom: 0.25rem;

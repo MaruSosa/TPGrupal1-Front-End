@@ -1,0 +1,674 @@
+/* ==========================================
+   CAROLINA.CSS - Estilos del perfil de Carolina
+   Header/nav/footer/tarjetas: mismo patrón que miguel.css
+   Hero: inspirado en el estilo de mariana.css
+   ========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  background-attachment: fixed;
+  color: #f8fafc;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   HEADER Y NAVEGACIÓN
+   ========================================== */
+
+.header {
+  background-color: #0b1120;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  border-bottom: 1px solid #334155;
+  position: relative;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #3182ce;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.nav a,
+.dropdown-btn {
+  text-decoration: none;
+  color: #f8fafc;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 0.2rem 0.5rem;
+}
+
+.nav a:hover,
+.nav a.active,
+.dropdown:hover .dropdown-btn {
+  color: rgb(95, 239, 250);
+  font-weight: 700;
+}
+
+/* ==========================================
+   DROPDOWN
+   ========================================== */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1e293b;
+  min-width: 180px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border: 1px solid #334155;
+  border-radius: 6px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #94a3b8;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.95rem;
+  text-align: left;
+  white-space: nowrap;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: #3182ce;
+  color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================
+   MENÚ HAMBURGUESA (MOBILE)
+   ========================================== */
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #f8fafc;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+  color: #3182ce;
+}
+
+@media (max-width: 899px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #0b1120;
+    padding: 1rem;
+    gap: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 0.6rem 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-content {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .dropdown-content a {
+    text-align: center;
+    padding: 0.5rem;
+  }
+}
+
+/* ==========================================
+   HERO (inspirado en el estilo de Mariana)
+   ========================================== */
+
+.hero-mini {
+  padding: 3.5rem 1.5rem 2.5rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-saludo {
+  color: #38bdf8;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 0.3rem;
+}
+
+.hero-mini-content h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.2rem;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+}
+
+.hero-mini-content h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #55bfed;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+/* ==========================================
+   PERFIL
+   ========================================== */
+
+.profile-section {
+  padding: 2.5rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profile-container {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+  border-color: #3182ce;
+  box-shadow: 0 8px 25px rgba(49, 130, 206, 0.3);
+}
+
+/* Avatar temporal con iniciales, mientras no hay foto */
+.avatar-placeholder {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #3182ce, #55bfed);
+  border: 3px solid #3182ce;
+  box-shadow: 0 10px 25px rgba(49, 130, 206, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.avatar-placeholder:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+}
+
+.profile-info h1 {
+  font-size: 2rem;
+  color: #55bfed;
+  margin-bottom: 1rem;
+}
+
+.profile-bio {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  color: #cbd5e1;
+  font-size: 1.05rem;
+}
+
+.profile-datos {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  color: #94a3b8;
+}
+
+.profile-datos li {
+  margin-bottom: 0.5rem;
+}
+
+.profile-datos strong {
+  color: #f8fafc;
+}
+
+.profile-socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.profile-socials a {
+  color: #dce2e9;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.profile-socials a:hover {
+  color: #38bdf8;
+  transform: translateY(-3px);
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.5));
+}
+
+/* ==========================================
+   HABILIDADES
+   ========================================== */
+
+.profile-section h2 {
+  font-size: 1.8rem;
+  color: #3182ce;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #334155;
+  padding-bottom: 0.8rem;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+}
+
+.profile-box {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.profile-box:hover {
+  transform: translateY(-8px);
+  border-color: #3182ce;
+  box-shadow: 0 8px 25px rgba(49, 130, 206, 0.3);
+}
+
+.profile-box i {
+  font-size: 3rem;
+  color: #38bdf8;
+  transition: transform 0.3s ease;
+}
+
+.profile-box:hover i {
+  transform: scale(1.15);
+}
+
+.profile-box h3 {
+  color: #55bfed;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* ==========================================
+   BARRA DE NIVEL POR HABILIDAD (FUNCIÓN DINÁMICA)
+   ========================================== */
+
+.skill-bar-track {
+  width: 100%;
+  height: 8px;
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #3182ce, #38bdf8);
+  transition: width 1.2s ease-out;
+}
+
+.skill-percent {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.skill-nota {
+  text-align: center;
+  color: #64748b;
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-top: 1.2rem;
+}
+
+/* ==========================================
+   TARJETAS (PELÍCULAS Y DISCOS)
+   ========================================== */
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.card-item {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.card-item:hover {
+  transform: translateY(-8px);
+  border-color: #3182ce;
+  box-shadow: 0 8px 25px rgba(49, 130, 206, 0.3);
+}
+
+.card-item.destacado {
+  border-color: #38bdf8;
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.45);
+}
+
+.card-item i {
+  font-size: 2.5rem;
+  color: #38bdf8;
+  transition: transform 0.3s ease;
+}
+
+.card-item:hover i {
+  transform: scale(1.15);
+}
+
+.card-item h3 {
+  color: #e2e8f0;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* ==========================================
+   DISCO RANDOM (FUNCIÓN DINÁMICA)
+   ========================================== */
+
+.disco-random {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn-random {
+  background-color: #3182ce;
+  color: #ffffff;
+  border: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.btn-random:hover {
+  background-color: #2b6cb0;
+  transform: translateY(-2px);
+}
+
+.resultado-random {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #38bdf8;
+  min-height: 1.5rem;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+.footer {
+  background-color: #141421;
+  border-top: 1px solid #2e2e4c;
+  padding: 3rem 1rem 1.5rem;
+  color: #40d3f1;
+  font-family: "Rubik", sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #2e2e4c;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-col h3 {
+  color: #3182ce;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-col h4 {
+  color: #f8fafc;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-col p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.3rem;
+}
+
+.footer-col ul li a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #38bdf8;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-socials a {
+  color: #94a3b8;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #38bdf8;
+  transform: translateY(-3px);
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.5));
+}
+
+.footer-copy {
+  text-align: center;
+  padding-top: 1.5rem;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+/* ==========================================
+   MEDIA QUERIES (BREAKPOINTS OBLIGATORIOS)
+   ========================================== */
+
+/* 400px en adelante */
+@media (min-width: 400px) {
+  .header {
+    padding: 1rem 1.5rem;
+  }
+  .logo {
+    font-size: 1.4rem;
+  }
+  .nav {
+    gap: 1rem;
+  }
+  .hero-mini-content h1 {
+    font-size: 2.4rem;
+  }
+  .profile-info h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* 900px en adelante */
+@media (min-width: 900px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+  .nav {
+    width: auto;
+    justify-content: flex-end;
+    gap: 1.2rem;
+  }
+  .dropdown-content {
+    left: auto;
+    right: 0;
+    transform: none;
+  }
+  .profile-container {
+    flex-direction: row;
+    text-align: left;
+  }
+  .profile-info {
+    flex: 1;
+  }
+  .profile-socials {
+    justify-content: flex-start;
+  }
+  .footer-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+  }
+}
+
+/* 1200px en adelante */
+@media (min-width: 1200px) {
+  .header {
+    padding: 1rem 3rem;
+  }
+  .nav {
+    gap: 1.8rem;
+  }
+  .hero-mini-content h1 {
+    font-size: 2.7rem;
+  }
+  .profile-info h1 {
+    font-size: 2.5rem;
+  }
+}

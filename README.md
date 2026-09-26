@@ -12,7 +12,7 @@ Incluye una portada con la presentación del equipo, perfiles individuales de ca
 | :--- | :--- |
 | Mariana Sosa | [@MaruSosa](https://github.com/MaruSosa) |
 | Miguel Marcaida | [@Miguel-Marcaida](https://github.com/Miguel-Marcaida) |
-| Caro [Apellido] | [@usuario](https://github.com/usuario) |
+| Carolina Silva Cotto | [@csilvacotto-2202](https://github.com/csilvacotto-2202) |
 | Sergio Cesar Barrientos | [@SergioCesarBarrientos](https://github.com/SergioCesarBarrientos) |
 | Karina [Apellido] | [@usuario](https://github.com/usuario) |
 
@@ -34,14 +34,17 @@ TPGrupal1-Front-End/
 ├── index.html ← Portada del equipo
 ├── mariana.html ← Perfil de Mariana
 ├── miguel.html ← Perfil de Miguel
+├── carolina.html ← Perfil de Carolina
 ├── bitacora.html ← Bitácora del proceso
 ├── css/
 │ ├── styles.css ← Estilos generales (index + bitácora)
 │ ├── mariana.css ← Estilos del perfil de Mariana
 │ └── miguel.css ← Estilos del perfil de Miguel
+│ └── carolina.css ← Estilos del perfil de Carolina
 ├── js/
 │ ├── main.js ← Carrusel de la portada
 │ └── miguel.js ← Funciones del perfil de Miguel
+│ └── carolina.js ← Funciones del perfil de Carolina
 ├── img/
 │ ├── (imágenes de Mariana)
 │ └── miguel/
@@ -102,6 +105,15 @@ TPGrupal1-Front-End/
 ### Perfil de Sergio (`sergio.html`)
 
 *(Pendiente de documentar)*
+
+---
+
+### Perfil de Carolina (`js/carolina.js`)
+
+| Función | Descripción |
+| :--- | :--- |
+| **Barras de nivel de habilidades** | Cada habilidad muestra una barra que se anima desde 0% hasta su porcentaje al entrar en pantalla (usando `IntersectionObserver`), en vez de aparecer ya completa. |
+| **Disco al azar** | Al hacer clic en el botón, elige al azar uno de los artistas favoritos y resalta su tarjeta correspondiente, mostrando el nombre elegido como recomendación. |
 
 ---
 
