@@ -36,8 +36,18 @@
 
     --font-main: "Roboto", sans-serif;
 }
-
-
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.hero-logo {
+  width: 120px;
+  margin: 0 auto 1rem;
+}
+html {
+    overflow-x: hidden;
+}
 /* ===================================================
    RESET
    =================================================== */
@@ -58,6 +68,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 
@@ -923,9 +934,21 @@ body {
 
 
 /* ===================================================
-   REDES SOCIALES DEL FOOTER
+   REDES SOCIALES
    =================================================== */
 
+/* Colores de marca redes sociales */
+.facebook { color: #1877f2; }
+.github   { color: #ffffff; }
+.instagram{ color: #e4405f; }
+.linkedin { color: #479aed; }
+.youtube  { color: #ff0000; }
+.telegram { color: #24a1de; }
+.twitter  { color: #1da1f2; }
+
+/* ===================================================
+  FOOTER
+   =================================================== */
 .footer-socials {
     display: flex;
 
@@ -979,14 +1002,7 @@ body {
     line-height: 1;
 }
 
-/* Colores de marca redes sociales */
-.facebook { color: #1877f2; }
-.github   { color: #ffffff; }
-.instagram{ color: #e4405f; }
-.linkedin { color: #479aed; }
-.youtube  { color: #ff0000; }
-.telegram { color: #24a1de; }
-.twitter  { color: #1da1f2; }
+
 
 /* Hover global y brillo neón */
 a.socials-item:hover {
@@ -995,7 +1011,7 @@ a.socials-item:hover {
   border-color: rgba(6, 255, 251, 0.61);
   background: linear-gradient(
     to right,
-    rgba(233, 236, 237, 0.13),
+    rgba(52, 57, 219, 0.13),
     #010607b5,
     rgba(255, 0, 94, 0.14)
   );
@@ -1243,7 +1259,7 @@ a.socials-item:hover .linkedin  { filter: drop-shadow(0 0 8px #0a66c2); }
 }
 
 .footer-col h4 {
-  color: #f8fafc;
+  color: #4299f1;
   font-size: 1rem;
   margin-bottom: 1.2rem;
   text-transform: uppercase;
@@ -1251,8 +1267,8 @@ a.socials-item:hover .linkedin  { filter: drop-shadow(0 0 8px #0a66c2); }
 }
 
 .footer-col p {
-  color: #94a3b8;
-  font-size: 0.9rem;
+  color: #c5d9f6;
+  font-size: 0.95rem;
 }
 
 .footer-col ul {
@@ -1266,9 +1282,9 @@ a.socials-item:hover .linkedin  { filter: drop-shadow(0 0 8px #0a66c2); }
 }
 
 .footer-col ul li a {
-  color: #94a3b8;
+  color: #d9e5f6;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   transition: color 0.3s ease;
 }
 
