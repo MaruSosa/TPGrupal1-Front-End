@@ -75,22 +75,14 @@ body {
    =================================================== */
 
 .header {
-    background: linear-gradient(
-        90deg,
-        #10091F,
-        #17102D,
-        #0E1C2D
-    );
-
-    padding: 1rem;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 0.8rem;
-
-    border-bottom: 1px solid rgba(139, 92, 246, 0.35);
+  background-color: #0b1120;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
 }
 
 
@@ -213,23 +205,14 @@ body {
 
 
 .dropdown-content a {
-    color: var(--text-muted);
-
-    padding: 10px 16px;
-
-    text-decoration: none;
-
-    display: block;
-
-    font-size: 0.95rem;
-
-    text-align: left;
-
-    white-space: nowrap;
-
-    transition:
-        background 0.2s,
-        color 0.2s;
+  color: var(--text-muted);
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.95rem;
+  text-align: left;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
 }
 
 
@@ -252,45 +235,23 @@ body {
 
 
 /* ===================================================
-   3. HERO BANNER Y SECCIONES GENERALES
+   3. HERO BANNER Y SECCIONES GENERALEZ
    =================================================== */
 
 .hero-banner {
-    background:
-        linear-gradient(
-            135deg,
-            rgba(76, 29, 149, 0.75),
-            rgba(15, 23, 42, 0.70),
-            rgba(8, 145, 178, 0.55)
-        ),
-        url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1350&q=80")
-        center/cover no-repeat;
-
-    color: var(--text-color);
-
-    padding: 4rem 1rem;
-
-    text-align: center;
+  background:
+    linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.65)),
+    url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1350&q=80")
+      center/cover no-repeat;
+  color: var(--text-color);
+  padding: 4rem 1rem;
+  text-align: center;
 }
 
-
-/* ===================================================
-   HERO - TÍTULO
-   =================================================== */
-
 .hero-content h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-
-    background: linear-gradient(
-        90deg,
-        #A78BFA,
-        #22D3EE
-    );
-
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #1a9dd5;
 }
 
 
@@ -299,22 +260,14 @@ body {
    =================================================== */
 
 .hero-content .subtitle {
-    font-size: 1.3rem;
-
-    color: #D8D2EA;
-
-    margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
 }
 
-
-/* ===================================================
-   HERO - PROPÓSITO
-   =================================================== */
-
 .hero-content .proposito {
-    font-size: 1.1rem;
-
-    color: #E2E8F0;
+  font-size: 1.1rem;
+  color: #dbe2ea;
 }
 
 
@@ -346,7 +299,6 @@ body {
 .section-title p {
     color: var(--text-muted);
 }
-
 
 /* ===================================================
    4. CARRUSEL Y TARJETAS DE EQUIPO
@@ -495,6 +447,18 @@ body {
     box-shadow:
         0 0 0 3px rgba(34, 211, 238, 0.25),
         0 0 20px rgba(139, 92, 246, 0.25);
+}
+
+/* Avatar temporal con iniciales para integrantes sin foto todavía */
+.card-avatar-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-main);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--primary-color), #55bfed);
 }
 
 
@@ -1096,28 +1060,19 @@ body {
 
 
 .footer-container {
-    max-width: 1200px;
-
-    margin: 0 auto;
-
-    padding: 0 20px;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    flex-wrap: wrap;
-
-    gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-
 .footer-col {
-    display: flex;
-
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -1216,85 +1171,32 @@ body {
     line-height: 1;
 }
 
+/* Colores de marca redes sociales */
+.facebook { color: #1877f2; }
+.github   { color: #ffffff; }
+.instagram{ color: #e4405f; }
+.linkedin { color: #479aed; }
+.youtube  { color: #ff0000; }
+.telegram { color: #24a1de; }
+.twitter  { color: #1da1f2; }
 
-/* ===================================================
-   COLORES DE MARCA DE REDES SOCIALES
-   =================================================== */
-
-.facebook {
-    color: #1877F2;
+/* Hover global y brillo neón */
+a.socials-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0px 20px rgba(1, 74, 84, 0.7);
+  border-color: rgba(6, 255, 251, 0.61);
+  background: linear-gradient(
+    to right,
+    rgba(233, 236, 237, 0.13),
+    #010607b5,
+    rgba(255, 0, 94, 0.14)
+  );
 }
 
-.github {
-    color: #FFFFFF;
-}
-
-.instagram {
-    color: #E4405F;
-}
-
-.linkedin {
-    color: #479AED;
-}
-
-.youtube {
-    color: #FF0000;
-}
-
-.telegram {
-    color: #24A1DE;
-}
-
-.twitter {
-    color: #1DA1F2;
-}
-
-
-/* ===================================================
-   HOVER REDES SOCIALES
-   =================================================== */
-
-.socials-item:hover {
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 0 20px rgba(139, 92, 246, 0.45);
-
-    border-color:
-        rgba(34, 211, 238, 0.7);
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(124, 58, 237, 0.20),
-            rgba(34, 211, 238, 0.15)
-        );
-}
-
-
-.socials-item:hover .facebook {
-    filter:
-        drop-shadow(0 0 8px #1877F2);
-}
-
-
-.socials-item:hover .github {
-    filter:
-        drop-shadow(0 0 8px #FFFFFF);
-}
-
-
-.socials-item:hover .instagram {
-    filter:
-        drop-shadow(0 0 8px #E4405F);
-}
-
-
-.socials-item:hover .linkedin {
-    filter:
-        drop-shadow(0 0 8px #0A66C2);
-}
-
+a.socials-item:hover .facebook  { filter: drop-shadow(0 0 8px #1877f2); }
+a.socials-item:hover .github    { filter: drop-shadow(0 0 8px #ffffff); }
+a.socials-item:hover .instagram { filter: drop-shadow(0 0 8px #e4405f); }
+a.socials-item:hover .linkedin  { filter: drop-shadow(0 0 8px #0a66c2); }
 
 /* ===================================================
    8. MEDIA QUERIES
@@ -1306,27 +1208,17 @@ body {
    =================================================== */
 
 @media (max-width: 768px) {
-
-    .footer-container {
-        flex-direction: column;
-
-        text-align: center;
-    }
-
-
-    .footer-nav ul {
-        flex-direction: column;
-
-        gap: 10px;
-    }
-
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
-
-/* ===================================================
-   BREAKPOINT 1: 400px EN ADELANTE
-   =================================================== */
-
+/* Breakpoint 1: 400px en adelante */
 @media (min-width: 400px) {
 
     .header {
@@ -1437,4 +1329,171 @@ body {
         font-size: 3rem;
     }
 
+}
+
+/* ===================================================
+   9. SECCIONES DE PERFIL Y BITÁCORA
+   =================================================== */
+
+.profile-section {
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profile-container {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow);
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 8px 25px rgba(49, 130, 206, 0.3);
+}
+
+.profile-section h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.8rem;
+}
+
+.profile-container h3 {
+  font-size: 1.3rem;
+  color: #55bfed;
+  margin-bottom: 1rem;
+}
+
+.profile-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-lista li {
+  background-color: #0f172a;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 0.6rem;
+  color: var(--text-muted);
+  transition:
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.profile-lista li:hover {
+  border-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.profile-lista li strong {
+  color: #55bfed;
+}
+
+/* ===================================================
+   10. FOOTER NUEVO
+   =================================================== */
+
+.footer {
+  background-color: #141421;
+  border-top: 1px solid #2e2e4c;
+  padding: 3rem 1rem 1.5rem;
+  color: #40d3f1;
+  font-family: "Rubik", sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #2e2e4c;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-col h3 {
+  color: #3182ce;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-col h4 {
+  color: #f8fafc;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-col p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.3rem;
+}
+
+.footer-col ul li a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #38bdf8;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-socials a {
+  color: #94a3b8;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #38bdf8;
+  transform: translateY(-3px);
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.5));
+}
+
+.footer-copy {
+  text-align: center;
+  padding-top: 1.5rem;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+  }
 }

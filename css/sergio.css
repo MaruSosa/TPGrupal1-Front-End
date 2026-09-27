@@ -1,0 +1,887 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ==========================================
+   HEADER Y NAVEGACIÓN
+   ========================================== */
+
+.header {
+    background: linear-gradient(135deg, #00a896, #4fa3b8);
+
+
+
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: relative;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+.nav a {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.nav a,
+.dropdown-btn {
+    text-decoration: none;
+    color: #f8fafc;
+    font-weight: 500;
+    transition: color 0.2s;
+    padding: 0.2rem 0.5rem;
+}
+
+.nav a:hover,
+.nav a.active,
+.dropdown:hover .dropdown-btn {
+    color: #062571;
+    font-weight: 700;
+}
+
+/* ==========================================
+   DROPDOWN
+   ========================================== */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1e293b;
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border: 1px solid #334155;
+    border-radius: 6px;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #94a3b8;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.95rem;
+    text-align: left;
+    white-space: nowrap;
+    transition:
+        background 0.2s,
+        color 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: #3182ce;
+    color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==========================================
+   MENÚ HAMBURGUESA (MOBILE)
+   ========================================== */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #f8fafc;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+    color: #3182ce;
+}
+
+
+
+/* primera parte - nombre */
+
+.primera-parte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 0;
+    letter-spacing: 1px;
+
+
+}
+
+.primera-parte h1 {
+    font-size: 80px;
+    font-weight: 100;
+    color: #1c9fbc;
+}
+
+/* segunda parte - biografia */
+
+.segunda-parte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 100px 0 100px;
+    background-image: url(../img/sergio/fondo2.jpg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+
+.informacion {
+    padding-bottom: 50px;
+    gap: 10px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.informacion h2 {
+    padding-bottom: 10px;
+    font-size: 50px;
+}
+
+
+.botones {
+    display: flex;
+    gap: 15px;
+    padding-top: 40px;
+}
+
+.botones a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: #5bbcd6;
+    color: white;
+    border: 2px solid #5bbcd6;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.botones a i {
+    font-size: 20px;
+}
+
+.botones a:hover {
+    background-color: transparent;
+    color: #3fa8c5;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+.fotografia img {
+    display: block;
+    width: 710px;
+    height: auto;
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
+}
+
+
+
+/* tercera parte - SKILLS */
+
+
+.skills {
+    padding: 50px 8%;
+    background-image: url(../img/sergio/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+
+.titulo-skills h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.titulo-skills p {
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+
+
+.skills-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+.skill {
+    width: 200px;
+    min-height: 150px;
+    padding: 30px 20px;
+    background-color: #f5fcfe;
+    border: 1px solid #dff3f8;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.skill i {
+    font-size: 42px;
+    color: #5bbcd6;
+}
+
+
+.skill h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+    color: #222;
+}
+
+
+.skill p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.skill:hover {
+    transform: translateY(-7px);
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(91, 188, 214, 0.2);
+    border-color: #b8e7f2;
+}
+
+
+
+/* cuarta parte -INTERESES */
+
+.hobbies {
+    padding: 100px 8%;
+    background: linear-gradient(135deg, #e8f8fc, #ffffff, #d9f3f7);
+
+    text-align: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+
+.titulo-hobbies h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.titulo-hobbies p {
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+
+
+.hobbies-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.hobby {
+    width: 250px;
+    min-height: 200px;
+    cursor: pointer;
+    padding: 30px 25px;
+    background: linear-gradient(135deg, #ffffff, #e8f8fc);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+
+.hobby i {
+    font-size: 45px;
+    color: #5bbcd6;
+}
+
+
+
+.hobby h3 {
+    margin: 15px 0 10px;
+    font-size: 21px;
+    color: #222;
+}
+
+
+.hobby p {
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+
+.hobby:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(91, 187, 214, 0.727);
+    border-color: #b8e7f2;
+}
+
+
+/* quinta parte - formulario */
+
+.contacto {
+
+    padding: 20px 8%;
+    background-image: url(../img/sergio/work.png);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.titulo-contacto {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.titulo-contacto h2 {
+    margin: 0;
+    font-size: 45px;
+    color: #222;
+}
+
+.titulo-contacto p {
+    color: #666;
+    font-size: 17px;
+}
+
+.formulario {
+    width: 50%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    padding: 35px;
+
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    border: 1px solid #d5e5e9;
+    border-radius: 10px;
+    background: white;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #5b9eae;
+}
+
+.formulario button {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4f8997;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.formulario button:hover {
+    background-color: #7bcef2;
+}
+
+
+/* ULTIMA PARTE -FOOTER */
+
+
+.footer {
+    padding: 40px 8% 20px;
+    background-color: #e8f8fc;
+    color: #333;
+    margin-top: 10px;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #777;
+    border-bottom: 1px solid #c9eaf2;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.footer-info h3 {
+    margin-bottom: 5px;
+}
+
+.footer-info p {
+    margin: 0;
+    color: #666;
+}
+
+.footer-enlaces {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-enlaces a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-enlaces a:hover {
+    color: #3fa8c5;
+}
+
+.footer-enlaces i {
+    font-size: 20px;
+}
+
+
+.btn-arriba {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #5bbcd6;
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.3s ease;
+
+    z-index: 1000;
+}
+
+.btn-arriba:hover {
+    background-color: #3fa8c5;
+    transform: translateY(-5px);
+}
+
+.btn-arriba.mostrar {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+@media (max-width: 900px) {
+
+    /* HEADER */
+    .navegador ul {
+        gap: 20px;
+        padding: 18px 15px;
+        flex-wrap: wrap;
+    }
+
+    .navegador a {
+        font-size: 18px;
+    }
+
+
+    /* PRIMERA PARTE */
+    .primera-parte {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .primera-parte h1 {
+        font-size: 60px;
+    }
+
+
+    /* SOBRE MI */
+    .segunda-parte {
+        flex-direction: column;
+        padding: 50px 30px 0 30px;
+        background-image: none;
+    }
+
+    .informacion {
+        padding: 0;
+        text-align: center;
+        max-width: 700px;
+    }
+
+    .informacion h2 {
+        font-size: 45px;
+    }
+
+    .botones {
+        justify-content: center;
+    }
+
+    .fotografia {
+        margin-top: 40px;
+    }
+
+    .fotografia img {
+        width: 450px;
+        max-width: 100%;
+    }
+
+
+    /* SKILLS */
+    .skills {
+        padding: 50px 5%;
+    }
+
+    .skill {
+        width: 180px;
+    }
+
+
+    /* INTERESES */
+    .hobbies {
+        padding: 80px 5%;
+    }
+
+    .hobby {
+        width: 220px;
+    }
+
+
+    /* CONTACTO */
+    .contacto {
+        padding: 70px 5%;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .titulo-contacto {
+        width: 80%;
+    }
+
+    .formulario {
+        width: 80%;
+    }
+
+
+    /* FOOTER */
+    .footer {
+        padding: 40px 5% 20px;
+    }
+}
+
+
+
+
+/* Celulares */
+@media (max-width: 600px) {
+
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #0acbe5;
+        padding: 1rem;
+        gap: 0.5rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        z-index: 999;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .nav a {
+        padding: 0.6rem 1rem;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .dropdown-content {
+        position: static;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .dropdown-content a {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+
+
+    /* PRIMERA PARTE */
+    .primera-parte {
+        padding: 50px 15px;
+    }
+
+    .primera-parte h1 {
+        font-size: 30px;
+        line-height: 1.1;
+    }
+
+    .primera-parte h2 {
+        font-size: 10px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+
+    /* SOBRE MI */
+    .segunda-parte {
+        padding: 50px 20px 0 20px;
+        background-image: none;
+    }
+
+    .informacion {
+        padding: 0;
+        text-align: center;
+    }
+
+    .informacion h2 {
+        font-size: 38px;
+    }
+
+    .informacion p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding-top: 30px;
+    }
+
+    .botones a {
+        width: 180px;
+        box-sizing: border-box;
+    }
+
+    .fotografia {
+        margin-top: 30px;
+    }
+
+    .fotografia img {
+        width: 320px;
+        max-width: 100%;
+    }
+
+
+    /* SKILLS */
+    .skills {
+        padding: 60px 20px;
+    }
+
+    .titulo-skills h2 {
+        font-size: 38px;
+    }
+
+    .titulo-skills p {
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+
+    .skills-contenedor {
+        gap: 18px;
+    }
+
+    .skill {
+        width: 100%;
+        max-width: 280px;
+        box-sizing: border-box;
+    }
+
+
+    /* INTERESES */
+    .hobbies {
+        padding: 70px 20px;
+    }
+
+    .titulo-hobbies h2 {
+        font-size: 38px;
+    }
+
+    .titulo-hobbies p {
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+
+    .hobbies-contenedor {
+        gap: 20px;
+    }
+
+    .hobby {
+        width: 100%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
+
+    /* CONTACTO */
+    .contacto {
+        padding: 60px 20px;
+        background-image: none;
+        align-items: center;
+    }
+
+    .titulo-contacto {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .titulo-contacto h2 {
+        font-size: 38px;
+    }
+
+    .titulo-contacto p {
+        font-size: 15px;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+
+    /* FOOTER */
+    .footer {
+        padding: 30px 20px 20px;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-enlaces {
+        justify-content: center;
+        gap: 20px;
+    }
+}
