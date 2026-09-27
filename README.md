@@ -30,6 +30,7 @@ Incluye una portada con la presentación del equipo, perfiles individuales de ca
 ---
 
 ## 📁 Estructura de archivos y carpetas
+```
 TPGrupal1-Front-End/
 ├── index.html              ← Portada del equipo
 ├── mariana.html            ← Perfil de Mariana
@@ -56,7 +57,7 @@ TPGrupal1-Front-End/
 │   └── sergio/
 │       └── yo.png
 └── README.md
-
+```
 ## 🎨 Guía de estilos
 
 ### Paleta de colores
