@@ -31,26 +31,31 @@ Incluye una portada con la presentación del equipo, perfiles individuales de ca
 
 ## 📁 Estructura de archivos y carpetas
 TPGrupal1-Front-End/
-├── index.html ← Portada del equipo
-├── mariana.html ← Perfil de Mariana
-├── miguel.html ← Perfil de Miguel
-├── carolina.html ← Perfil de Carolina
-├── bitacora.html ← Bitácora del proceso
+├── index.html              ← Portada del equipo
+├── mariana.html            ← Perfil de Mariana
+├── miguel.html             ← Perfil de Miguel
+├── carolina.html           ← Perfil de Carolina
+├── sergio.html             ← Perfil de Sergio
+├── bitacora.html           ← Bitácora del proceso
 ├── css/
-│ ├── styles.css ← Estilos generales (index + bitácora)
-│ ├── mariana.css ← Estilos del perfil de Mariana
-│ └── miguel.css ← Estilos del perfil de Miguel
-│ └── carolina.css ← Estilos del perfil de Carolina
+│   ├── styles.css          ← Estilos generales (index + bitácora)
+│   ├── mariana.css         ← Estilos del perfil de Mariana
+│   ├── miguel.css          ← Estilos del perfil de Miguel
+│   ├── carolina.css        ← Estilos del perfil de Carolina
+│   └── sergio.css          ← Estilos del perfil de Sergio
 ├── js/
-│ ├── main.js ← Carrusel de la portada
-│ └── miguel.js ← Funciones del perfil de Miguel
-│ └── carolina.js ← Funciones del perfil de Carolina
+│   ├── main.js             ← Carrusel de la portada
+│   ├── miguel.js           ← Funciones del perfil de Miguel
+│   ├── carolina.js         ← Funciones del perfil de Carolina
+│   └── sergio.js           ← Funciones del perfil de Sergio
 ├── img/
-│ ├── (imágenes de Mariana)
-│ └── miguel/
-│ └── avatar-miguel.png
+│   ├── miguel/
+│   │   └── avatar-miguel.png
+│   ├── carolina/
+│   │   └── carolina-foto.png
+│   └── sergio/
+│       └── yo.png
 └── README.md
----
 
 ## 🎨 Guía de estilos
 
