@@ -301,90 +301,16 @@ body {
 }
 
 /* ===================================================
-   4. CARRUSEL Y TARJETAS DE EQUIPO
+   4. TARJETAS DE EQUIPO
    =================================================== */
 
-.carousel-container {
-    position: relative;
-
-    max-width: 800px;
-
-    margin: 0 auto;
-
-    display: flex;
-
-    align-items: center;
-}
-
-
-.carousel-track-container {
-    overflow: hidden;
-
-    width: 100%;
-
-    border-radius: 8px;
-}
-
-
-.carousel-track {
-    display: flex;
-
-    transition: transform 0.4s ease-in-out;
-
-    list-style: none;
-}
-
-
-.carousel-slide {
-    min-width: 100%;
-
-    padding: 1rem;
-}
-
-
-/* ===================================================
-   BOTONES DEL CARRUSEL
-   =================================================== */
-
-.carousel-btn {
-    background: linear-gradient(
-        135deg,
-        #7C3AED,
-        #8B5CF6
-    );
-
-    color: white;
-
-    border: none;
-
-    font-size: 1.5rem;
-
-    padding: 0.5rem 1rem;
-
-    cursor: pointer;
-
-    border-radius: 50%;
-
-    z-index: 10;
-
-    transition:
-        background 0.2s,
-        transform 0.2s,
-        box-shadow 0.2s;
-}
-
-
-.carousel-btn:hover {
-    background: linear-gradient(
-        135deg,
-        #8B5CF6,
-        #22D3EE
-    );
-
-    transform: scale(1.05);
-
-    box-shadow:
-        0 0 15px rgba(34, 211, 238, 0.35);
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 
@@ -689,6 +615,10 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -702,6 +632,10 @@ body {
   }
 
   .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1163,8 +1097,9 @@ a.socials-item:hover .linkedin  { filter: drop-shadow(0 0 8px #0a66c2); }
     }
 
 
-    .carousel-slide {
-        min-width: 50%;
+    .team-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
     }
 
 
