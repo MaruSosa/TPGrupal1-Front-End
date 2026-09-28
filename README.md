@@ -116,23 +116,23 @@ TPGrupal1-Front-End/
 | **Saludo Dinámico** | Muestra "Buenos días", "Buenas tardes" o "Buenas noches" según la hora del visitante. |
 | **Carrusel de Habilidades** | Carrusel infinito con autoplay, navegación por botones, puntos indicadores, swipe en móvil y pausa al pasar el mouse. |
 | **Botón "Volver arriba"** | Aparece al hacer scroll (`window.scrollY > 300`) y vuelve al inicio con `window.scrollTo({ behavior: "smooth" })`. |
+| **Carrusel de Habilidades** | Carrusel infinito con autoplay, navegación por botones, puntos indicadores, swipe en móvil y pausa al pasar el mouse.<br><img src="img/capturas/index-carrusel.png" alt="Carrusel de habilidades" width="400"> |
 
 ### 2. Perfiles Individuales
 
 | Perfil | Función | Descripción |
 | :--- | :--- | :--- |
-| **Mariana** (`js/mariana.js`) | Barras de nivel de habilidades | Anima el ancho de cada barra con `IntersectionObserver` cuando la sección entra en pantalla. |
+| **Mariana** (`js/mariana.js`) | Barras de nivel de habilidades | Anima el ancho de cada barra con `IntersectionObserver` cuando la sección entra en pantalla.<br><img src="img/capturas/mariana-habilidades.png" alt="Barras de habilidades de Mariana" width="400"> |
 | | Recomendador de disco al azar | Elige un artista al azar, resalta su tarjeta y muestra una recomendación. |
-| **Miguel** (`js/miguel.js`) | Reloj en tiempo real | Actualiza la hora cada segundo con `setInterval()`. |
-| | Filtro de habilidades | Filtra por categoría (frontend, backend, bases de datos) con `dataset` y `style.display`. |
+| **Miguel** (`js/miguel.js`) | Reloj en tiempo real | Actualiza la hora cada segundo con `setInterval()`.<br><img src="img/capturas/miguel-reloj.png" alt="Reloj de Miguel" width="400"> |
+| | Filtro de habilidades | Filtra por categoría (frontend, backend, bases de datos) con `dataset` y `style.display`.<br><img src="img/capturas/miguel-filtro.png" alt="Filtro de Miguel" width="400"> |
 | | "Ver más" en películas | Expande la sinopsis con `classList` y `textContent`. |
 | | "Top 3" en discos | Muestra los 3 temas favoritos de cada artista. |
 | **Carolina** (`js/carolina.js`) | Barras de nivel de habilidades | Anima el ancho con `IntersectionObserver`.<br><img src="img/capturas/carolina-habilidades-antes.png" alt="Antes" width="250"> <img src="img/capturas/carolina-habilidades-despues.png" alt="Después" width="250"> |
 | | Recomendador de disco al azar | Elige un cantante al azar y lo muestra como recomendación. |
-| **Sergio** (`js/sergio.js`) | Botón "Volver arriba" | Aparece al hacer scroll y vuelve al inicio con `window.scrollTo({ behavior: "smooth" })`. |
-| **Karina** (`js/karina.js`) | Frases motivadoras | Al hacer clic en un botón, cambia una frase con transición de opacidad. |
+| **Sergio** (`js/sergio.js`) | Botón "Volver arriba" | Aparece al hacer scroll y vuelve al inicio con `window.scrollTo({ behavior: "smooth" })`.<br><img src="img/capturas/sergio-volver-arriba.png" alt="Botón volver arriba de Sergio" width="400"> |
+| **Karina** (`js/karina.js`) | Frases motivadoras | Al hacer clic en un botón, cambia una frase con transición de opacidad.<br><img src="img/capturas/karina-efecto.png" alt="Efecto 3D de Karina" width="400"> |
 | | Efecto 3D en tarjetas | Aplica rotación 3D con `perspective`, `rotateX`, `rotateY` y `scale3d` al mover el mouse. |
-
 ---
 
 ## 🤖 Uso de Inteligencia Artificial y Criterio de Autoría
