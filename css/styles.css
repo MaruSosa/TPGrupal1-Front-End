@@ -250,9 +250,10 @@ body {
 /* ===================================================
    4. TARJETAS DE EQUIPO
    =================================================== */
-.team-section {
+.team-section{
     padding-bottom: 70px;
 }
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -531,11 +532,12 @@ body {
    =================================================== */
 
 .contact-section {
-  padding: 1rem 1rem 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+      min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .contact-container {
