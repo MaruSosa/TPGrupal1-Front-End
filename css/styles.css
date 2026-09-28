@@ -250,7 +250,9 @@ body {
 /* ===================================================
    4. TARJETAS DE EQUIPO
    =================================================== */
-
+.team-section {
+    padding-bottom: 70px;
+}
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
