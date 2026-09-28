@@ -1,334 +1,515 @@
 <!doctype html>
 <html lang="es">
-
-<head>
+  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Mariana Sosa - TechArg</title>
+
+  <title>Mariana Sosa - TechArg</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <link rel="shortcut icon" href="img/logoItfs.png" type="image/x-icon">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <!-- Devicon -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+  />
+
+  <link
+    rel="shortcut icon"
+    href="img/logoItfs.png"
+    type="image/x-icon"
+  />
+
   <link rel="stylesheet" href="css/mariana.css" />
 </head>
 
 <body>
- <!-- ENCABEZADO / NAVEGACIÓN (mismo patrón que las demás páginas, para navegar sin usar el botón Atrás) -->
+
+  <!-- ENCABEZADO / NAVEGACIÓN -->
   <header class="header">
+
     <div class="logo">
       <span>TechArg</span>
     </div>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Abrir menú"
+    >
       <i class="fas fa-bars"></i>
     </button>
 
     <nav class="nav" id="navMenu">
+
       <a href="index.html">Inicio</a>
       <a href="index.html#equipo">Nosotros</a>
       <a href="index.html#contacto">Contacto</a>
       <a href="bitacora.html">Bitácora</a>
       <a href="index.html#habilidades">Habilidades</a>
+
       <div class="dropdown">
-        <a href="index.html#equipo" class="dropdown-btn active">Perfiles ▾</a>
+
+        <a
+          href="index.html#equipo"
+          class="dropdown-btn active"
+        >
+          Perfiles ▾
+        </a>
+
         <div class="dropdown-content">
+
           <a href="mariana.html">Mariana Sosa</a>
           <a href="miguel.html">Miguel Marcaida</a>
           <a href="carolina.html">Carolina Silva Cotto</a>
           <a href="sergio.html">Sergio Cesar Barrientos</a>
           <a href="karina.html">Karina Sanchez</a>
+
         </div>
+
       </div>
+
     </nav>
+
   </header>
+
   <main>
-    <!-- La sección de inicio funciona como presentación principal y destaca mi perfil profesional. -->
+
+    <!-- INICIO -->
     <section id="inicio" class="hero">
+
       <div class="hero-content">
+
         <p class="hero-saludo">Hola, soy</p>
 
         <h1>Mariana Sosa</h1>
 
-        <h2>Estudiante de Ingeniería en Sistemas y Tecnicatura en Desarrollo de Software</h2>
+        <h2>
+          Estudiante de Ingeniería en Sistemas y Tecnicatura en Desarrollo de Software
+        </h2>
 
         <p class="hero-description">
-          Para mí, construir software va más allá de escribir código limpio; se trata de entender el problema, planificar la estrategia y gestionar el proceso hacia el éxito.
+          Para mí, construir software va más allá de escribir código limpio;
+          se trata de entender el problema, planificar la estrategia y
+          gestionar el proceso hacia el éxito.
         </p>
+
       </div>
 
     </section>
 
       <!-- SOBRE MÍ / DATOS -->
-    <section class="profile-section">
-      <div class="profile-container">
-        
-        <div class="profile-img">
-          <img src="img/foto cv.webp" alt="Mariana Sosa" />
-        </div>
+      <section class="profile-section">
+        <div class="profile-container">
+          <div class="profile-img">
+            <img src="img/foto cv.webp" alt="Mariana Sosa" />
+          </div>
 
-        <div class="profile-info">
-          <h1>Mariana Sosa</h1>
+          <div class="profile-info">
+            <h1>Mariana Sosa</h1>
 
-          <p class="profile-bio">
-           ¡Hola! Soy Mariana. Mi recorrido combina la visión de la Ingeniería en Sistemas con la formación técnica de la Tecnicatura Superior en Desarrollo de Software.A lo largo de este camino, sumé herramientas de desarrollo Full Stack y descubrí una fuerte vocación tanto por la programación como por la gestión de proyectos, dos áreas clave para el éxito de cualquier producto tecnológico. Actualmente, estoy enfocada en potenciar mis conocimientos prácticos en C# y bases de datos, buscando siempre crear soluciones eficientes, limpias y escalables.
-          </p>
+            <p class="profile-bio">
+              ¡Hola! Soy Mariana. Mi recorrido combina la visión de la
+              Ingeniería en Sistemas con la formación técnica de la Tecnicatura
+              Superior en Desarrollo de Software.A lo largo de este camino, sumé
+              herramientas de desarrollo Full Stack y descubrí una fuerte
+              vocación tanto por la programación como por la gestión de
+              proyectos, dos áreas clave para el éxito de cualquier producto
+              tecnológico. Actualmente, estoy enfocada en potenciar mis
+              conocimientos prácticos en C# y bases de datos, buscando siempre
+              crear soluciones eficientes, limpias y escalables.
+            </p>
 
-          <ul class="profile-datos">
-            <li><strong>Ciudad:</strong> Aguilares-Tucumán</li>
-            <li><strong>Edad:</strong> 35 años</li>
-          </ul>
+            <ul class="profile-datos">
+              <li><strong>Ciudad:</strong> Aguilares-Tucumán</li>
+              <li><strong>Edad:</strong> 35 años</li>
+            </ul>
             <div class="profile-socials">
-            <a href="https://github.com/MaruSosa" target="_blank" title="GitHub">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/mariana-sosa-0b2378185/" target="_blank" title="LinkedIn">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://www.instagram.com/maruu_sosa/?hl=es" target="_blank" title="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/mariana.sosa.5015" target="_blank" title="Facebook">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="habilidades" class="seccion">
-      <h2 class="titulo-seccion">Habilidades & Tecnologías</h2>
-
-      <div class="contenedor-habilidades">
-        <!-- Tecnologías que domino -->
-        <div class="grupo-habilidades">
-          <h3>Tecnologías que manejo</h3>
-          <ul class="habilidades-lista">
-            <li class="habilidad">
-              <i class="devicon-html5-plain colored"></i>
-              <span>HTML5</span>
-            </li>
-            <li class="habilidad">
-              <i class="devicon-css3-plain colored"></i>
-              <span>CSS3</span>
-            </li>
-            <li class="habilidad">
-              <i class="devicon-javascript-plain colored"></i>
-              <span>JavaScript</span>
-            </li>
-            <li class="habilidad">
-              <i class="devicon-csharp-plain colored"></i>
-              <span>C#</span>
-            </li>
-            <li class="habilidad">
-              <i class="devicon-mysql-plain colored"></i>
-              <span>MySQL</span>
-            </li>
-            <li class="habilidad">
-              <i class="devicon-java-plain colored"></i>
-              <span>Java</span>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Tecnologías por aprender -->
-        <div class="grupo-habilidades">
-          <h3>Tecnologías por aprender</h3>
-          <ul class="habilidades-lista">
-            <li class="habilidad">
-              <i class="devicon-python-plain colored"></i>
-              <span>Python</span>
-            </li>
-            <li class="habilidad">
-              <i class="devicon-kotlin-plain colored"></i>
-              <span>Kotlin</span>
-            </li>
-            <li class="habilidad">
-              <i class="devicon-react-original colored"></i>
-              <span>React</span>
-            </li>
-            <li class="habilidad">
-
-              <i class="devicon-nodejs-plain colored"></i>
-
-              <span>Nodejs</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- Los proyectos están organizados mediante elementos article para representar cada trabajo de forma independiente. -->
-    <section id="proyectos" class="seccion">
-      <h2>Proyectos</h2>
-
-      <div class="proyectos-container">
-        <article class="proyecto">
-          <img src="img/logo clinica.webp" alt="Vista del sistema de gestión de la Clínica SePrice" />
-          <h3>Sistema de Clínica SePrice</h3>
-          <p>
-            Sistema de gestión de turnos, pacientes, estudios médicos,
-            especialidades y profesionales .
-          </p>
-          <a href="https://github.com/MaruSosa/ClinicaSePrice">Ver proyecto</a>
-        </article>
-
-        <article class="proyecto">
-          <img src="img/logo aleli.webp" alt="Vista de logo de Aleli" />
-          <h3>Cotillón Aleli</h3>
-          <p>
-            Página web para la venta de artículos de cotillón, diseñada para
-            presentar productos de manera atractiva.
-          </p>
-          <a href="https://proyectoaleli-ms.netlify.app/">Ver proyecto</a>
-        </article>
-        <article class="proyecto">
-          <img src="img/log parrillada.webp" alt="Vista de logo parrillada" />
-          <h3>R-Parrillada</h3>
-          <p>
-            Página web de una parillada, diseñada para presentar una propuesta tentadora de los diferentes menús.
-          </p>
-          <a href="https://miparrillada-ms.netlify.app/">Ver proyecto</a>
-        </article>
-      </div>
-    </section>
-    <!-- Sección de películas con comentarios personales-->
-     <section id="peliculas" class="seccion">
-      <h2>Música, Libros y Películas Favoritas</h2>
-
-      <div class="contenedor-cards">
-        
-        <!-- CARD 1: MÚSICA -->
-        <div class="card">
-          <div class="face front">
-            <img src="img/musica.webp" alt="Mi PlayList">
-            <h3>Música</h3>
-          </div>
-          <div class="face back">
-            <h3>Bandas Favoritas</h3>
-            <p>Guns N' Roses</p>
-            <p>Rata Blanca</p>
-            <p>Metallica</p>
-          </div>
-        </div>
-
-        <!-- CARD 2: PELÍCULAS -->
-        <div class="card">
-          <div class="face front">
-            <img src="img/peliculas.webp" alt="Películas de terror">
-            <h3>Películas</h3>
-          </div>
-          <div class="face back">
-            <h3>Terror Favorito</h3>
-            <p>Psicosis</p>
-            <p>El Exorcista</p>
-            <p>Shutter</p>
-            <p>El Conjuro</p>
-          </div>
-        </div>
-
-        <!-- CARD 3: LIBROS -->
-        <div class="card">
-          <div class="face front">
-            <!-- Si no tienes la imagen aún, puedes usar una de internet o mantener tu ruta -->
-            <img src="img/libros.webp" alt="Mis Libros Favoritos">
-            <h3>Libros</h3>
-          </div>
-          <div class="face back">
-            <h3>Lecturas Favoritas</h3>
-            <p>La biblioteca de la medianoche</p>
-            <p>El psicoanalista</p>
-            <p>Pídeme lo que quieras</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- El formulario utiliza labels asociados a cada campo para mejorar la accesibilidad y facilitar su uso. -->
-    <section id="contacto" class="seccion">
-      <div class="contacto-wrapper">
-        <div class="contacto-header">
-          <h2>Contacto</h2>
-          <p>
-            Si querés conocer más sobre mi trabajo o ponernos en contacto, podés
-            enviarme un mensaje o encontrarme en mis redes sociales.
-          </p>
-        </div>
-
-        <form class="formulario-contacto">
-          <div class="campo">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required />
-          </div>
-
-          <div class="campo">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Ingresá tu email" required />
-          </div>
-
-          <div class="campo">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje" required></textarea>
-          </div>
-
-          <button type="submit" class="boton-enviar">Enviar mensaje</button>
-
-          <div class="redes-contacto">
-            <span>O si preferís, podés escribirme directo en:</span>
-            <div class="redes-links">
-              <a href="mailto:marianass712@gmail.com" target="_blank" rel="noopener noreferrer"
-                class="link-social">Email</a>
-              <a href="https://www.linkedin.com/in/mariana-sosa-0b2378185/" target="_blank" rel="noopener noreferrer"
-                class="link-social">LinkedIn</a>
-              <a href="https://www.facebook.com/mariana.sosa.5015" target="_blank" rel="noopener noreferrer"
-                class="link-social">Facebook</a>
+              <a
+                href="https://github.com/MaruSosa"
+                target="_blank"
+                title="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mariana-sosa-0b2378185/"
+                target="_blank"
+                title="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/maruu_sosa/?hl=es"
+                target="_blank"
+                title="Instagram"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/mariana.sosa.5015"
+                target="_blank"
+                title="Facebook"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
             </div>
           </div>
-        </form>
-      </div>
-    </section>
-  </main>
+        </div>
+      </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-contenido">
-      <ul class="footer-redes">
+      <section id="habilidades" class="seccion">
+        <h2 class="titulo-seccion">Habilidades & Tecnologías</h2>
+
+        <div class="contenedor-habilidades">
+          <!-- Tecnologías que domino -->
+          <div class="grupo-habilidades">
+            <h3>Tecnologías que manejo</h3>
+            <ul class="habilidades-lista">
+              <li class="habilidad">
+                <i class="devicon-html5-plain colored"></i>
+                <span>HTML5</span>
+              </li>
+              <li class="habilidad">
+                <i class="devicon-css3-plain colored"></i>
+                <span>CSS3</span>
+              </li>
+              <li class="habilidad">
+                <i class="devicon-javascript-plain colored"></i>
+                <span>JavaScript</span>
+              </li>
+              <li class="habilidad">
+                <i class="devicon-csharp-plain colored"></i>
+                <span>C#</span>
+              </li>
+              <li class="habilidad">
+                <i class="devicon-mysql-plain colored"></i>
+                <span>MySQL</span>
+              </li>
+              <li class="habilidad">
+                <i class="devicon-java-plain colored"></i>
+                <span>Java</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tecnologías por aprender -->
+          <div class="grupo-habilidades">
+            <h3>Tecnologías por aprender</h3>
+            <ul class="habilidades-lista">
+              <li class="habilidad">
+                <i class="devicon-python-plain colored"></i>
+                <span>Python</span>
+              </li>
+              <li class="habilidad">
+                <i class="devicon-kotlin-plain colored"></i>
+                <span>Kotlin</span>
+              </li>
+              <li class="habilidad">
+                <i class="devicon-react-original colored"></i>
+                <span>React</span>
+              </li>
+              <li class="habilidad">
+                <i class="devicon-nodejs-plain colored"></i>
+
+                <span>Nodejs</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Los proyectos están organizados mediante elementos article para representar cada trabajo de forma independiente. -->
+      <section id="proyectos" class="seccion">
+        <h2>Proyectos</h2>
+
+        <div class="proyectos-container">
+          <article class="proyecto">
+            <img
+              src="img/logo clinica.webp"
+              alt="Vista del sistema de gestión de la Clínica SePrice"
+            />
+            <h3>Sistema de Clínica SePrice</h3>
+            <p>
+              Sistema de gestión de turnos, pacientes, estudios médicos,
+              especialidades y profesionales .
+            </p>
+            <a href="https://github.com/MaruSosa/ClinicaSePrice"
+              >Ver proyecto</a
+            >
+          </article>
+
+          <article class="proyecto">
+            <img src="img/logo aleli.webp" alt="Vista de logo de Aleli" />
+            <h3>Cotillón Aleli</h3>
+            <p>
+              Página web para la venta de artículos de cotillón, diseñada para
+              presentar productos de manera atractiva.
+            </p>
+            <a href="https://proyectoaleli-ms.netlify.app/">Ver proyecto</a>
+          </article>
+          <article class="proyecto">
+            <img src="img/log parrillada.webp" alt="Vista de logo parrillada" />
+            <h3>R-Parrillada</h3>
+            <p>
+              Página web de una parillada, diseñada para presentar una propuesta
+              tentadora de los diferentes menús.
+            </p>
+            <a href="https://miparrillada-ms.netlify.app/">Ver proyecto</a>
+          </article>
+        </div>
+      </section>
+      <!-- Sección de películas con comentarios personales-->
+      <section id="peliculas" class="seccion">
+        <h2>Música, Libros y Películas Favoritas</h2>
+
+        <div class="contenedor-cards">
+          <!-- CARD 1: MÚSICA -->
+          <div class="card">
+            <div class="face front">
+              <img src="img/musica.webp" alt="Mi PlayList" />
+              <h3>Música</h3>
+            </div>
+            <div class="face back">
+              <h3>Bandas Favoritas</h3>
+              <p>Guns N' Roses</p>
+              <p>Rata Blanca</p>
+              <p>Metallica</p>
+            </div>
+          </div>
+
+          <!-- CARD 2: PELÍCULAS -->
+          <div class="card">
+            <div class="face front">
+              <img src="img/peliculas.webp" alt="Películas de terror" />
+              <h3>Películas</h3>
+            </div>
+            <div class="face back">
+              <h3>Terror Favorito</h3>
+              <p>Psicosis</p>
+              <p>El Exorcista</p>
+              <p>Shutter</p>
+              <p>El Conjuro</p>
+            </div>
+          </div>
+
+          <!-- CARD 3: LIBROS -->
+          <div class="card">
+            <div class="face front">
+              <!-- Si no tienes la imagen aún, puedes usar una de internet o mantener tu ruta -->
+              <img src="img/libros.webp" alt="Mis Libros Favoritos" />
+              <h3>Libros</h3>
+            </div>
+            <div class="face back">
+              <h3>Lecturas Favoritas</h3>
+              <p>La biblioteca de la medianoche</p>
+              <p>El psicoanalista</p>
+              <p>Pídeme lo que quieras</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- El formulario utiliza labels asociados a cada campo para mejorar la accesibilidad y facilitar su uso. -->
+      <section id="contacto" class="seccion">
+        <div class="contacto-wrapper">
+          <div class="contacto-header">
+            <h2>Contacto</h2>
+            <p>
+              Si querés conocer más sobre mi trabajo o ponernos en contacto,
+              podés enviarme un mensaje o encontrarme en mis redes sociales.
+            </p>
+          </div>
+
+          <form class="formulario-contacto">
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Ingresá tu nombre"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ingresá tu email"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                placeholder="Escribí tu mensaje"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="boton-enviar">Enviar mensaje</button>
+
+            <div class="redes-contacto">
+              <span>O si preferís, podés escribirme directo en:</span>
+              <div class="redes-links">
+                <a
+                  href="mailto:marianass712@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link-social"
+                  >Email</a
+                >
+                <a
+                  href="https://www.linkedin.com/in/mariana-sosa-0b2378185/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link-social"
+                  >LinkedIn</a
+                >
+                <a
+                  href="https://www.facebook.com/mariana.sosa.5015"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link-social"
+                  >Facebook</a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+  <!-- Pie de Página -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- Columna 1: Logo + descripción -->
+    <div class="footer-col">
+
+      <h3>TechArg</h3>
+
+      <p>
+        Equipo de desarrollo web - DSWF 2026
+      </p>
+
+    </div>
+
+    <!-- Columna 2: Navegación -->
+    <div class="footer-col">
+
+      <h4>Navegación</h4>
+
+      <ul>
+
         <li>
-          <a class="footer-link" href="https://github.com/MaruSosa" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
+          <a href="#inicio">Inicio</a>
         </li>
+
         <li>
-          <a class="footer-link" href="https://www.linkedin.com/in/mariana-sosa-0b2378185/" target="_blank"
-            aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
+          <a href="index.html#equipo">Equipo</a>
         </li>
+
         <li>
-          <a class="footer-link" href="https://www.facebook.com/mariana.sosa.5015" target="_blank"
-            aria-label="Facebook">
-            <i class="fab fa-facebook"></i>
-          </a>
+          <a href="bitacora.html">Bitácora</a>
         </li>
+
+        <li>
+          <a href="#contacto">Contacto</a>
+        </li>
+
       </ul>
 
-      <a href="#contacto" class="footer-cta">Escríbeme y cuéntame tu duda </a>
-
-      <p class="footer-copyright">
-        || &copy; Copyright 2026. Todos los derechos reservados.
-      </p>
     </div>
 
-    <div class="footer-subir">
-      <a href="#" aria-label="Volver arriba">
-        <i class="fa-solid fa-circle-chevron-up"></i>
-      </a>
+    <!-- Columna 3: Redes Sociales -->
+    <div class="footer-col">
+
+      <h4>Seguinos</h4>
+
+      <div class="footer-socials">
+
+        <a
+          href="https://www.facebook.com/mariana.sosa.5015"
+          class="socials-item"
+          title="Facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-facebook facebook"></i>
+        </a>
+
+        <a
+          href="#"
+          class="socials-item"
+          title="Twitter"
+        >
+          <i class="fa-brands fa-twitter twitter"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/maruu_sosa/?hl=es"
+          class="socials-item"
+          title="Instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-instagram instagram"></i>
+        </a>
+
+        <a
+          href="#"
+          class="socials-item"
+          title="YouTube"
+        >
+          <i class="fa-brands fa-youtube youtube"></i>
+        </a>
+
+        <a
+          href="#"
+          class="socials-item"
+          title="Telegram"
+        >
+          <i class="fa-brands fa-telegram telegram"></i>
+        </a>
+
+      </div>
+
     </div>
-  </footer>
 
+  </div>
 
+  <!-- Copyright -->
+  <div class="footer-copy">
 
-</body>
+    <p>
+      2026 © TechArg - Todos los derechos reservados
+    </p>
+
+  </div>
+
+</footer>
+
 <script src="js/main.js"></script>
 
+</body>
 </html>

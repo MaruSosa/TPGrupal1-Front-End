@@ -194,14 +194,14 @@ body {
    ========================================== */
 @media (min-width: 900px) {
   .header {
-    flex-direction: row;            /* Cambia el flujo a horizontal */
-    justify-content: space-between;    /* Pone el logo a la izquierda y el nav a la derecha */
-    padding: 1rem 3rem;             /* Agrega un poco de margen a los costados */
+    flex-direction: row;           
+    justify-content: space-between;    
+    padding: 1rem 3rem;          
   }
 
   .nav {
-    width: auto;                    /* Quita el comportamiento del 100% de ancho */
-    gap: 1.5rem;                    /* Espaciado óptimo entre secciones */
+    width: auto;                   
+    gap: 1.5rem;                   
   }
 }
 
@@ -791,10 +791,15 @@ body {
         align-items: center;
     }
 
-    .profile-socials {
-        justify-content: center; 
-    }
+    .profile-socials a i {
+  font-size: 1.5rem;
+  color: #ffffff; /* O el color celeste #3182ce que usas para los títulos */
+  transition: color 0.3s ease;
+}
 
+.profile-socials a:hover i {
+  color: #4299f1;
+}
     .contacto-wrapper {
         padding: 25px 20px;
     }
@@ -804,83 +809,121 @@ body {
         gap: 10px;
     }
 }
-/* ==========================================
-   11. FOOTER
-   ========================================== */
-
-footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 3rem 5% 2rem;
-    position: relative;
+/* ===================================================
+   9. FOOTER UNIFICADO (En 3 columnas para escritorio)
+   =================================================== */
+.footer {
+  background-color: #141421;
+  border-top: 1px solid #2e2e4c;
+  padding: 3rem 1rem 1.5rem;
+  color: #c5d9f6; /* Color de texto claro */
+  font-family: "Rubik", sans-serif;
 }
 
-.footer-contenido {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr; /* 1 columna en móviles */
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #2e2e4c;
 }
 
-.footer-redes {
-    display: flex;
-    gap: 1.2rem;
+/* Pasar a 3 columnas en pantallas grandes */
+@media (min-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.footer-link {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    border: 2px solid transparent;
-    background: linear-gradient(#0f172a, #0f172a) padding-box,
-                linear-gradient(to right, #38bdf8, #6366f1) border-box;
-    color: #38bdf8;
-    transition: all 0.3s ease;
+.footer-col {
+  display: flex;
+  flex-direction: column;
 }
 
-.footer-link:hover {
-    transform: scale(1.15);
-    color: #a78bfa;
-    box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+.footer-col h3 {
+  color: #3182ce;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.footer-cta {
-    font-size: 0.95rem;
-    font-weight: 700;
-    color: #38bdf8;
-    transition: color 0.3s ease;
-    text-decoration: none;
+.footer-col h4 {
+  color: #4299f1;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.footer-cta:hover {
-    color: #a78bfa;
+.footer-col p {
+  color: #c5d9f6;
+  font-size: 0.95rem;
 }
 
-.footer-copyright {
-    font-size: 0.85rem;
-    color: #777777;
+.footer-col ul {
+  list-style: none;
 }
 
-.footer-subir {
-    position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
-    z-index: 200;
+.footer-col ul li {
+  margin-bottom: 0.3rem;
 }
 
-.footer-subir a {
-    font-size: 2.4rem;
-    color: #38bdf8;
-    transition: all 0.3s ease;
-    display: block;
+.footer-col ul li a {
+  color: #d9e5f6;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
 }
 
-.footer-subir a:hover {
-    color: #6366f1;
-    transform: translateY(-3px);
+.footer-col ul li a:hover {
+  color: #38bdf8;
+}
+
+/* Estilos para los círculos de las Redes Sociales */
+.footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.socials-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2e2e4c; /* Fondo oscuro del círculo */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Esto fuerza a que el logo de Font Awesome interno sea blanco/celeste */
+.socials-item i {
+  color: #4299f1; 
+  font-size: 1.2rem;
+}
+
+.socials-item:hover {
+  background-color: #3182ce;
+}
+
+.socials-item:hover i {
+  color: #ffffff; /* El icono pasa a blanco al apoyar el mouse */
+}
+
+.footer-copy {
+  text-align: center;
+  padding-top: 1.5rem;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+.footer-socials .socials-item {
+  width: 40px;  
+  height: 40px;
+}
+
+.footer-socials .socials-item i {
+  font-size: 18px; 
 }
