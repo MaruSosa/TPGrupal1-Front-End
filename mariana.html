@@ -15,22 +15,34 @@
 </head>
 
 <body>
-  <header>
-    <!-- La navegación permite acceder rápidamente a cada sección mediante enlaces internos. -->
-    <nav>
-      <div class="logo">Mariana Sosa</div>
+ <!-- ENCABEZADO / NAVEGACIÓN (mismo patrón que las demás páginas, para navegar sin usar el botón Atrás) -->
+  <header class="header">
+    <div class="logo">
+      <span>TechArg</span>
+    </div>
 
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#peliculas">Preferidos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Inicio</a>
+      <a href="index.html#equipo">Nosotros</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="bitacora.html">Bitácora</a>
+      <a href="index.html#habilidades">Habilidades</a>
+      <div class="dropdown">
+        <a href="index.html#equipo" class="dropdown-btn active">Perfiles ▾</a>
+        <div class="dropdown-content">
+          <a href="mariana.html">Mariana Sosa</a>
+          <a href="miguel.html">Miguel Marcaida</a>
+          <a href="carolina.html">Carolina Silva Cotto</a>
+          <a href="sergio.html">Sergio Cesar Barrientos</a>
+          <a href="integrante5.html">Nombre 5</a>
+        </div>
+      </div>
     </nav>
   </header>
-
   <main>
     <!-- La sección de inicio funciona como presentación principal y destaca mi perfil profesional. -->
     <section id="inicio" class="hero">
@@ -174,21 +186,19 @@
           <img src="img/log parrillada.webp" alt="Vista de logo parrillada" />
           <h3>R-Parrillada</h3>
           <p>
-            Página web de una parillada, diseñada para presentar productos de
-            manera atractiva.
+            Página web de una parillada, diseñada para presentar una propuesta tentadora de los diferentes menús.
           </p>
           <a href="https://miparrillada-ms.netlify.app/">Ver proyecto</a>
         </article>
       </div>
     </section>
     <!-- Sección de películas con comentarios personales-->
-    <section id="peliculas" class="seccion">
-      <div class="marcador-seccion">
-        <h2>Música, Libros y Películas Favoritas</h2>
-      </div>
+     <section id="peliculas" class="seccion">
+      <h2>Música, Libros y Películas Favoritas</h2>
 
       <div class="contenedor-cards">
-        <!-- Card 1 -->
+        
+        <!-- CARD 1: MÚSICA -->
         <div class="card">
           <div class="face front">
             <img src="img/musica.webp" alt="Mi PlayList">
@@ -198,54 +208,40 @@
             <h3>Bandas Favoritas</h3>
             <p>Guns N' Roses</p>
             <p>Rata Blanca</p>
-            <p>Metalica</p>
+            <p>Metallica</p>
           </div>
         </div>
 
-        <!-- Card 2 -->
+        <!-- CARD 2: PELÍCULAS -->
         <div class="card">
           <div class="face front">
-            <img src="img/peliculas.webp" alt="Películas conceptuales oscuras">
-            <h3>Películas de terror</h3>
+            <img src="img/peliculas.webp" alt="Películas de terror">
+            <h3>Películas</h3>
           </div>
           <div class="face back">
-            <h3>Películas de terror</h3>
+            <h3>Terror Favorito</h3>
             <p>Psicosis</p>
-            <p>El exorcista</p>
+            <p>El Exorcista</p>
             <p>Shutter</p>
             <p>El Conjuro</p>
           </div>
         </div>
 
-        <!-- Card 3 -->
+        <!-- CARD 3: LIBROS -->
         <div class="card">
           <div class="face front">
-            <img src="img/libros.webp" alt="Libros y Lectura">
-            <h3>Mis Libros Preferidos</h3>
+            <!-- Si no tienes la imagen aún, puedes usar una de internet o mantener tu ruta -->
+            <img src="img/libros.webp" alt="Mis Libros Favoritos">
+            <h3>Libros</h3>
           </div>
           <div class="face back">
-            <h3>Mis Libros Preferidos</h3>
-            <p>Mi Planta de Naranja Lima</p>
-            <p>Habitos Atomicos</p>
-            <p>Cien años de Soledad</p>
-            <p>Orgullo y Prejuicio</p>
+            <h3>Lecturas Favoritas</h3>
+            <p>La biblioteca de la medianoche</p>
+            <p>El psicoanalista</p>
+            <p>Pídeme lo que quieras</p>
           </div>
         </div>
 
-        <!-- Card 4 -->
-        <div class="card">
-          <div class="face front">
-            <img src="img/hobbies.webp" alt="Hobbies - Manualidades, Tejido y Pintura">
-            <h3>Hobbies</h3>
-          </div>
-          <div class="face back">
-            <h3>Hobbies</h3>
-            <p>Leer</p>
-            <p>Tejer</p>
-            <p>Hacer manualidades</p>
-            <p>Pintar</p>
-          </div>
-        </div>
       </div>
     </section>
     <!-- El formulario utiliza labels asociados a cada campo para mejorar la accesibilidad y facilitar su uso. -->
@@ -330,5 +326,5 @@
     </div>
   </footer>
 </body>
-
+<script src="js/main.js"></script>
 </html>
