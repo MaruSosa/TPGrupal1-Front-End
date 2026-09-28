@@ -32,39 +32,41 @@ El sitio funciona como portal oficial de presentación de nuestro equipo de desa
 
 🔗 **Sitio Web Publicado (Vercel):** [https://techarg-tp1.vercel.app](https://techarg-tp1.vercel.app)
 
-```
 ## 📁 Estructura del Proyecto
+
+```
 TPGrupal1-Front-End/
-├── index.html ← Portada del equipo
-├── mariana.html ← Perfil de Mariana
-├── miguel.html ← Perfil de Miguel
-├── carolina.html ← Perfil de Carolina
-├── sergio.html ← Perfil de Sergio
-├── karina.html ← Perfil de Karina
-├── bitacora.html ← Bitácora del proceso
+├── index.html              ← Portada del equipo
+├── mariana.html            ← Perfil de Mariana
+├── miguel.html             ← Perfil de Miguel
+├── carolina.html           ← Perfil de Carolina
+├── sergio.html             ← Perfil de Sergio
+├── karina.html             ← Perfil de Karina
+├── bitacora.html           ← Bitácora del proceso
 ├── css/
-│ ├── styles.css ← Estilos generales (index + bitácora)
-│ ├── mariana.css ← Estilos del perfil de Mariana
-│ ├── miguel.css ← Estilos del perfil de Miguel
-│ ├── carolina.css ← Estilos del perfil de Carolina
-│ ├── sergio.css ← Estilos del perfil de Sergio
-│ └── karina.css ← Estilos del perfil de Karina
+│   ├── styles.css          ← Estilos generales (index + bitácora)
+│   ├── mariana.css         ← Estilos del perfil de Mariana
+│   ├── miguel.css          ← Estilos del perfil de Miguel
+│   ├── carolina.css        ← Estilos del perfil de Carolina
+│   ├── sergio.css          ← Estilos del perfil de Sergio
+│   └── karina.css          ← Estilos del perfil de Karina
 ├── js/
-│ ├── main.js ← Menú hamburguesa, saludo, carrusel de habilidades, botón "Volver arriba"
-│ ├── mariana.js ← Barras de nivel de habilidades, recomendador de disco al azar
-│ ├── miguel.js ← Reloj, filtro de habilidades, "Ver más" en películas, "Top 3" en discos
-│ ├── carolina.js ← Barras de nivel de habilidades, recomendador de disco al azar
-│ ├── sergio.js ← Botón "Volver arriba"
-│ └── karina.js ← Frases motivadoras, efecto 3D en tarjetas
+│   ├── main.js             ← Menú hamburguesa, saludo, carrusel, botón "Volver arriba"
+│   ├── mariana.js          ← Barras de habilidades, recomendador al azar
+│   ├── miguel.js           ← Reloj, filtro, "Ver más", "Top 3"
+│   ├── carolina.js         ← Barras de habilidades, recomendador al azar
+│   ├── sergio.js           ← Botón "Volver arriba"
+│   └── karina.js           ← Frases motivadoras, efecto 3D
 ├── img/
-│ ├── miguel/
-│ │ └── avatar-miguel.png
-│ ├── carolina/
-│ │ └── carolina-foto.png
-│ ├── sergio/
-│ │ └── yo.png
-│ └── karina/
-│ └── perfil.png
+│   ├── logoItfs.png
+│   ├── miguel/
+│   │   └── avatar-miguel.png
+│   ├── carolina/
+│   │   └── carolina-foto.png
+│   ├── sergio/
+│   │   └── yo.png
+│   └── karina/
+│       └── perfil.png
 └── README.md
 ```
 
