@@ -8,14 +8,17 @@
 }
 
 :root {
-    --bg-dark: #0f0a1c;
-    --bg-card: #1a1528;
-    --accent: #c084fc;
-    --accent-hover: #a855f7;
-    --text-main: #f3f4f6;
-    --text-muted: #9ca3af;
-    --border-color: rgba(192, 132, 252, 0.2);
+    --bg-dark: #0f172a;
+    --bg-card: #1e293b;
+    --accent: #3182ce;
+    --accent-hover: #2b6cb0;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --border-color: #334155;
 }
+/* 
+
+
 
 body {
     background-color: var(--bg-dark);
