@@ -14,7 +14,7 @@ Incluye una portada con la presentación del equipo, perfiles individuales de ca
 | Miguel Marcaida | [@Miguel-Marcaida](https://github.com/Miguel-Marcaida) |
 | Carolina Silva Cotto | [@csilvacotto-2202](https://github.com/csilvacotto-2202) |
 | Sergio Cesar Barrientos | [@SergioCesarBarrientos](https://github.com/SergioCesarBarrientos) |
-| Karina [Apellido] | [@usuario](https://github.com/usuario) |
+| Karina Sánchez | [@karinaluciasanz](https://github.com/karinaluciasanz |
 
 ---
 
@@ -35,16 +35,19 @@ TPGrupal1-Front-End/
 ├── mariana.html ← Perfil de Mariana
 ├── miguel.html ← Perfil de Miguel
 ├── carolina.html ← Perfil de Carolina
+├── karina.html ← Perfil de Karina
 ├── bitacora.html ← Bitácora del proceso
 ├── css/
 │ ├── styles.css ← Estilos generales (index + bitácora)
 │ ├── mariana.css ← Estilos del perfil de Mariana
 │ └── miguel.css ← Estilos del perfil de Miguel
 │ └── carolina.css ← Estilos del perfil de Carolina
+│ └── karina.css ← Estilo de perfil de Karina
 ├── js/
 │ ├── main.js ← Carrusel de la portada
 │ └── miguel.js ← Funciones del perfil de Miguel
 │ └── carolina.js ← Funciones del perfil de Carolina
+│ └── karina.js← Funciones del perfil de Karina
 ├── img/
 │ ├── (imágenes de Mariana)
 │ └── miguel/
