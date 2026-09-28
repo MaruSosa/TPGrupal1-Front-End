@@ -127,7 +127,7 @@ TPGrupal1-Front-End/
 | | Filtro de habilidades | Filtra por categoría (frontend, backend, bases de datos) con `dataset` y `style.display`. |
 | | "Ver más" en películas | Expande la sinopsis con `classList` y `textContent`. |
 | | "Top 3" en discos | Muestra los 3 temas favoritos de cada artista. |
-| **Carolina** (`js/carolina.js`) | Barras de nivel de habilidades | Anima el ancho con `IntersectionObserver`. |
+| **Carolina** (`js/carolina.js`) | Barras de nivel de habilidades | Anima el ancho con `IntersectionObserver`.<br><img src="img/capturas/carolina-habilidades-antes.png" alt="Antes" width="250"> <img src="img/capturas/carolina-habilidades-despues.png" alt="Después" width="250"> |
 | | Recomendador de disco al azar | Elige un cantante al azar y lo muestra como recomendación. |
 | **Sergio** (`js/sergio.js`) | Botón "Volver arriba" | Aparece al hacer scroll y vuelve al inicio con `window.scrollTo({ behavior: "smooth" })`. |
 | **Karina** (`js/karina.js`) | Frases motivadoras | Al hacer clic en un botón, cambia una frase con transición de opacidad. |

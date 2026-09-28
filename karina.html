@@ -1,93 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil | Karina Sanchez</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil | Karina Sanchez - TechArg</title>
 
     <!-- Fuentes y Tipografía -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Íconos FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Tu archivo CSS individual -->
-    <link rel="stylesheet" href="css/karina.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <header class="main-header">
-        <div class="logo">&lt;KarinaSanchez /&gt;</div>
-        <nav class="nav-links">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="bitacora.html">Bitácora</a></li>
-                <li><a href="karina.html" class="active">Karina</a></li>
-                <li><a href="mariana.html">Mariana</a></li>
-                <li><a href="miguel.html">Miguel</a></li>
-                <li><a href="carolina.html">Carolina</a></li>
-                <li><a href="sergio.html">Sergio</a></li>
-            </ul>
-        </nav>
+    <!-- Íconos FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Estilos generales del grupo (header y footer) -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Font Awesome 5.15.4 (para header/footer) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Font Awesome 6.4.0 (para el contenido de Karina) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Tu archivo CSS individual (contenido del perfil) -->
+    <link rel="stylesheet" href="css/karina.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/logoItfs.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- ENCABEZADO / NAVEGACIÓN (unificado) -->
+    <header class="header">
+      <div class="logo">
+        <span>TechArg</span>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#equipo">Nosotros</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="bitacora.html">Bitácora</a>
+        <a href="index.html#habilidades">Habilidades</a>
+        <div class="dropdown">
+          <a href="index.html#equipo" class="dropdown-btn active">Perfiles ▾</a>
+          <div class="dropdown-content">
+            <a href="mariana.html">Mariana Sosa</a>
+            <a href="miguel.html">Miguel Marcaida</a>
+            <a href="carolina.html">Carolina Silva Cotto</a>
+            <a href="sergio.html">Sergio Cesar Barrientos</a>
+            <a href="karina.html">Karina Sanchez</a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- SECCIÓN DE PERFIL PRINCIPAL -->
     <main class="profile-container">
-        <section class="hero-section">
-            <div class="hero-content">
-                <span class="badge">Desarrolladora Web & Diseñadora</span>
-                <h1>Lucia Karina Sanchez</h1>
-                <p class="tagline">Transformando ideas en soluciones digitales con disciplina, vectorización y código.</p>
-                
-                <div class="hero-actions">
-                    <button id="btn-interactive" class="btn-primary">
-                        <i class="fa-solid fa-bolt"></i> Impulso Interactivo
-                    </button>
-                </div>
-                
-                <div class="mantra-box">
-                    <p id="interactive-text">🔥 "La disciplina de hoy es la maestría del mañana. Cada línea de código cuenta."</p>
-                </div>
-            </div>
+      <section class="hero-section">
+        <div class="hero-content">
+          <span class="badge">Desarrolladora Web & Diseñadora</span>
+          <h1>Lucia Karina Sanchez</h1>
+          <p class="tagline">
+            Transformando ideas en soluciones digitales con disciplina,
+            vectorización y código.
+          </p>
 
-            <div class="hero-image-wrapper">
-                <div class="image-frame">
-                    <img src="img/karina/perfil.png" alt="Foto de Karina Sanchez" class="profile-avatar">
-                </div>
-            </div>
-        </section>
+          
+          <!-- DATOS PERSONALES -->
+          <ul class="profile-datos">
+            <li><strong>Ciudad:</strong> Zárate, Buenos Aires</li>
+            <li><strong>Edad:</strong> 29 años</li>
+          </ul>
 
-        <!-- TARJETAS INTERACTIVAS (3D TILTING) -->
-        <section class="details-grid">
-            <div class="detail-card">
-                <div class="card-icon"><i class="fa-solid fa-code"></i></div>
-                <h3>Desarrollo Frontend</h3>
-                <p>Especializada en maquetación semántica HTML5, estilos avanzados CSS3 y lógica interactiva con JavaScript.</p>
-            </div>
+        
+          <div class="hero-actions">
+            <button id="btn-interactive" class="btn-primary">
+              <i class="fa-solid fa-bolt"></i> Impulso Interactivo
+            </button>
+          </div>
 
-            <div class="detail-card">
-                <div class="card-icon"><i class="fa-solid fa-pen-nib"></i></div>
-                <h3>Diseño Vectorial & Impresión</h3>
-                <p>Creación de diseños vectoriales, preparación de pliegos de impresión y personalización en sublimación.</p>
-            </div>
+          <div class="mantra-box">
+            <p id="interactive-text">
+              🔥 "La disciplina de hoy es la maestría del mañana. Cada línea de
+              código cuenta."
+            </p>
+          </div>
+        </div>
 
-            <div class="detail-card">
-                <div class="card-icon"><i class="fa-solid fa-database"></i></div>
-                <h3>Bases de Datos & Control de Versiones</h3>
-                <p>Modelado de datos MySQL, flujo de trabajo colaborativo en Git/GitHub y despliegues continuos.</p>
-            </div>
-        </section>
+        <div class="hero-image-wrapper">
+          <div class="image-frame">
+            <img
+              src="img/karina/perfil.png"
+              alt="Foto de Karina Sanchez"
+              class="profile-avatar"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- TARJETAS INTERACTIVAS (3D TILTING) -->
+      <section class="details-grid">
+        <div class="detail-card">
+          <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Desarrollo Frontend</h3>
+          <p>
+            Especializada en maquetación semántica HTML5, estilos avanzados CSS3
+            y lógica interactiva con JavaScript.
+          </p>
+        </div>
+
+        <div class="detail-card">
+          <div class="card-icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <h3>Diseño Vectorial & Impresión</h3>
+          <p>
+            Creación de diseños vectoriales, preparación de pliegos de impresión
+            y personalización en sublimación.
+          </p>
+        </div>
+
+        <div class="detail-card">
+          <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>Bases de Datos & Control de Versiones</h3>
+          <p>
+            Modelado de datos MySQL, flujo de trabajo colaborativo en Git/GitHub
+            y despliegues continuos.
+          </p>
+        </div>
+      </section>
+
+            <!-- PELÍCULAS FAVORITAS -->
+      <section class="profile-section">
+        <h2>🎬 Películas favoritas</h2>
+        <div class="cards-grid">
+          <div class="card-item">
+            <i class="fas fa-film"></i>
+            <h3>El viaje de Chihiro</h3>
+            <p>2001 · Hayao Miyazaki</p>
+          </div>
+          <div class="card-item">
+            <i class="fas fa-film"></i>
+            <h3>Interestelar</h3>
+            <p>2014 · Christopher Nolan</p>
+          </div>
+          <div class="card-item">
+            <i class="fas fa-film"></i>
+            <h3>El Señor de los Anillos: El Retorno del Rey</h3>
+            <p>2003 · Peter Jackson</p>
+          </div>
+        </div>
+      </section>
+
+
+
     </main>
 
-    <!-- PIE DE PÁGINA -->
-    <footer class="main-footer">
-        <p>&copy; 2026 Karina Sanchez - TP Grupal Front-End</p>
+    <!-- PIE DE PÁGINA (unificado) -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Columna 1: Logo + descripción -->
+        <div class="footer-col">
+          <h3>TechArg</h3>
+          <p>Equipo de desarrollo web - DSWF 2026</p>
+        </div>
+
+        <!-- Columna 2: Navegación -->
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#equipo">Equipo</a></li>
+            <li><a href="bitacora.html">Bitácora</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Redes -->
+        <div class="footer-col">
+          <h4>Seguinos</h4>
+          <div class="footer-socials">
+            <a href="#" class="socials-item" title="Facebook"
+              ><i class="fab fa-facebook-f facebook"></i
+            ></a>
+            <a href="#" class="socials-item" title="Twitter"
+              ><i class="fab fa-twitter twitter"></i
+            ></a>
+            <a href="#" class="socials-item" title="Instagram"
+              ><i class="fab fa-instagram instagram"></i
+            ></a>
+            <a href="#" class="socials-item" title="YouTube"
+              ><i class="fab fa-youtube youtube"></i
+            ></a>
+            <a href="#" class="socials-item" title="Telegram"
+              ><i class="fab fa-telegram telegram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-copy">
+        <p>2026 © TechArg - Todos los derechos reservados</p>
+      </div>
     </footer>
 
-    <!-- SCRIPT JS INDIVIDUAL -->
+    <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
     <script src="js/karina.js"></script>
-</body>
+  </body>
 </html>
