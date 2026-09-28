@@ -26,9 +26,9 @@ El sitio funciona como portal oficial de presentación de nuestro equipo de desa
 | Integrante | Rol / Responsabilidad | Perfil de GitHub |
 | :--- | :--- | :--- |
 | **Mariana Rosa Sosa** | Front-End Developer / Maquetación CSS & Docs | [@marianarosasosa](https://github.com/) |
-| **Miguel Marcaida** | Front-End Developer / JS Interactivo | [@miguelmarcaida](https://github.com/) |
-| **Carolina Silva Cotto** | Front-End Developer / Estilos & Responsive | [@carolinasilvacotto](https://github.com/) |
-| **Sergio Cesar Barrientos** | Front-End Developer / UI & Header | [@sergiobarrientos](https://github.com/) |
+| **Miguel Marcaida** | Front-End Developer / JS Interactivo, UI & Errorres  | [@miguelmarcaida](https://github.com/) |
+| **Carolina Silva Cotto** | Front-End Developer / JS Interactivo & Estilos | [@carolinasilvacotto](https://github.com/) |
+| **Sergio Cesar Barrientos** | Front-End Developer / JS Interactivo & Logo | [@sergiocesarbarrientos](https://github.com/) |
 | **Karina** | Front-End Developer / Bitácora & Contenido | [@karina-dev](https://github.com/) |
 
 ---
@@ -94,12 +94,13 @@ El sitio funciona como portal oficial de presentación de nuestro equipo de desa
 * 📱 **Menú Hamburguesa & Dropdown:** Gestión del menú desplegable y menú lateral responsivo en móviles.
 * 🎠 **Carrusel de Habilidades:** Control de navegación por botones e indicadores de puntos (*dots*).
 * 🌅 **Saludo Dinámico por Horario:** Renderiza automáticamente *"Buenos días"*, *"Buenas tardes"* o *"Buenas noches"* según la hora del usuario.
+* ⬆️ **Botón "Volver arriba":** Aparece al realizar scroll y permite regresar rápidamente al inicio de la página. Esta funcionalidad fue incorporada en los distintos perfiles del proyecto.
 
 ### 2. Perfiles Individuales
 * 🔹 **Perfil Mariana (`js/mariana.js`):** Contador interactivo de proyectos/habilidades.
 * 🔹 **Perfil Miguel (`js/miguel.js`):** Selector interactivo de temas/vistas previas de discos.
 * 🔹 **Perfil Carolina (`js/carolina.js`):** Modal interactivo emergente de habilidades.
-* 🔹 **Perfil Sergio (`js/sergio.js`):** Filtro dinámico de categorías para películas y discos.
+* 🔹 **Perfil Sergio (`js/sergio.js`):** Botón interactivo de "Volver arriba" que aparece al hacer scroll y permite regresar rápidamente al inicio de la página. La funcionalidad fue incorporada en los distintos perfiles del proyecto.
 * 🔹 **Perfil Karina (`js/karina.js`):** Sistema de reconocimiento dinámico con almacenamiento local (`localStorage`).
 
 ---
