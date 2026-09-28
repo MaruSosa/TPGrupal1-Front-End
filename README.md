@@ -32,8 +32,7 @@ El sitio funciona como portal oficial de presentación de nuestro equipo de desa
 
 🔗 **Sitio Web Publicado (Vercel):** [https://techarg-tp1.vercel.app](https://techarg-tp1.vercel.app)
 
----
-
+```
 ## 📁 Estructura del Proyecto
 TPGrupal1-Front-End/
 ├── index.html ← Portada del equipo
@@ -67,9 +66,7 @@ TPGrupal1-Front-End/
 │ └── karina/
 │ └── perfil.png
 └── README.md
-
-
----
+```
 
 ## 🛠️ Tecnologías Utilizadas
 
