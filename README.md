@@ -1,8 +1,9 @@
+# 🚀 TechArg — Proyecto Web TP1 🚀
 
-# TechArg - Trabajo Práctico Grupal 1
-
-Sitio web grupal desarrollado para la materia **Desarrollo de Sistemas Web (Front End)**.
-Incluye una portada con la presentación del equipo, perfiles individuales de cada integrante, una bitácora del proceso y navegación interna entre todas las secciones.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 ---
 
@@ -14,18 +15,17 @@ Incluye una portada con la presentación del equipo, perfiles individuales de ca
 | Miguel Marcaida | [@Miguel-Marcaida](https://github.com/Miguel-Marcaida) |
 | Carolina Silva Cotto | [@csilvacotto-2202](https://github.com/csilvacotto-2202) |
 | Sergio Cesar Barrientos | [@SergioCesarBarrientos](https://github.com/SergioCesarBarrientos) |
-| Karina [Apellido] | [@usuario](https://github.com/usuario) |
+| Karina Sánchez | [@karinaluciasanz](https://github.com/karinaluciasanz) |
 
----
+**TechArg** es una plataforma web colaborativa desarrollada para la materia **Desarrollo de Sistemas Web (Front End)** del 2º Cuatrimestre de la **Tecnicatura Superior en Desarrollo de Software a Distancia (IFTS 29)**.
 
-## 🛠️ Tecnologías utilizadas
+El sitio funciona como portal oficial de presentación de nuestro equipo de desarrollo e incluye:
+* 🏠 **Portada (Inicio):** Presentación del grupo, propuesta de valor y acceso directo al equipo.
+* 👤 **Perfiles Individuales:** Tarjetas de presentación de cada integrante con sus habilidades, gustos de películas, música y datos de contacto.
+* 📓 **Bitácora de Desarrollo:** Registro de las decisiones de diseño, dificultades técnicas superadas y la evolución del proyecto.
+* 🎯 **Navegación Dinámica:** Menú responsive con desplegable (*dropdown*) para acceder a los perfiles e interacciones dinámicas con JavaScript.
 
-- **HTML5** — Estructura semántica y accesible.
-- **CSS3** — Flexbox, Grid, responsive, animaciones y transiciones.
-- **JavaScript** — DOM, eventos, filtros, reloj en tiempo real.
-- **Google Fonts** — Roboto y Rubik.
-- **Font Awesome** — Iconografía.
-- **Devicon** — Iconos de tecnologías.
+🔗 **Sitio Web Publicado (Vercel):** [https://techarg-tp1.vercel.app](https://techarg-tp1.vercel.app) *(Reemplazar con la URL final desplegada)*
 
 ---
 
@@ -64,93 +64,104 @@ TPGrupal1-Front-End/
 
 | Color | Hexadecimal | Uso |
 | :--- | :--- | :--- |
-| Azul primario | `#3182ce` | Bordes, títulos, botones |
-| Azul hover | `#2b6cb0` | Hover de botones |
-| Fondo oscuro | `#0f172a` | Fondo general |
-| Fondo tarjetas | `#1e293b` | Tarjetas y contenedores |
-| Texto claro | `#f8fafc` | Texto principal |
-| Texto muted | `#94a3b8` | Texto secundario |
-| Borde | `#334155` | Bordes de tarjetas |
-
-### Tipografías
-
-- **Roboto** (400, 500, 700) — Texto general
-- **Rubik** (400, 500) — Títulos y footer
-
-### Iconografía
-
-- **Font Awesome 5.15.4** — Redes sociales, películas, discos, proyectos
-- **Devicon** — Iconos de tecnologías (HTML5, CSS3, JS, etc.)
+| **Mariana Rosa Sosa** | Front-End Developer / Maquetación CSS & Docs | [@marianarosasosa](https://github.com/) |
+| **Miguel Marcaida** | Front-End Developer / JS Interactivo, UI & Errorres  | [@miguelmarcaida](https://github.com/) |
+| **Carolina Silva Cotto** | Front-End Developer / JS Interactivo & Estilos | [@carolinasilvacotto](https://github.com/) |
+| **Sergio Cesar Barrientos** | Front-End Developer / JS Interactivo & Logo | [@sergiocesarbarrientos](https://github.com/) |
+| **Karina** | Front-End Developer / Bitácora & Contenido | [@karina-dev](https://github.com/) |
 
 ---
 
-## ⚙️ Funciones JavaScript
+## 🛠️ Tecnologías Utilizadas
 
-### Portada (`js/main.js`)
-
-| Función | Descripción |
-| :--- | :--- |
-| **Carrusel** | Permite navegar entre las tarjetas de los integrantes con botones de anterior/siguiente. Se adapta al tamaño de la pantalla. |
-
-### Perfil de Miguel (`js/miguel.js`)
-
-| Función | Descripción |
-| :--- | :--- |
-| **Reloj en tiempo real** | Muestra la hora actualizada cada segundo con `setInterval`. |
-| **Filtro de habilidades** | Filtra las habilidades por categoría (frontend, backend, bases de datos). |
-| **"Ver más..." en películas** | Expande la sinopsis de cada película al hacer clic. |
-| **"Ver top 3..." en discos** | Muestra los 3 temas favoritos de cada artista. |
-
-### Perfil de Mariana (`mariana.html`)
-
-*(Pendiente de documentar)*
+* 🔹 **HTML5:** Estructuración semántica de todas las páginas.
+* 🔹 **CSS3:** Variables CSS (`:root`), Flexbox, CSS Grid, animaciones y media queries para diseño adaptable.
+* 🔹 **JavaScript (ES6+):** Manipulación del DOM, eventos e interactividad dinámica.
+* 🔹 **Font Awesome:** Iconografía vectorial para redes sociales e interfaz.
+* 🔹 **Vercel:** Despliegue continuo y hosting.
+* 🔹 **Git & GitHub:** Control de versiones y trabajo colaborativo.
 
 ---
 
+## 📁 Estructura del Proyecto
 
-### Perfil de Sergio (`sergio.html`)
-
-*(Pendiente de documentar)*
-
----
-
-### Perfil de Carolina (`js/carolina.js`)
-
-| Función | Descripción |
-| :--- | :--- |
-| **Barras de nivel de habilidades** | Cada habilidad muestra una barra que se anima desde 0% hasta su porcentaje al entrar en pantalla (usando `IntersectionObserver`), en vez de aparecer ya completa. |
-| **Disco al azar** | Al hacer clic en el botón, elige al azar uno de los artistas favoritos y resalta su tarjeta correspondiente, mostrando el nombre elegido como recomendación. |
-
----
-
-## 🌐 URL publicada en Vercel
-
-*(Pendiente de deploy)*
-
----
-
-## 📈 Evolución
-
-Este proyecto es la base para los próximos trabajos prácticos. En futuras iteraciones se puede:
-
-- Agregar más funciones dinámicas en cada perfil.
-- Incorporar un formulario de contacto funcional (con backend o servicio externo).
-- Mejorar la accesibilidad (roles ARIA, navegación con teclado).
-- Optimizar las imágenes y el rendimiento.
-- Agregar una sección de proyectos destacados del equipo.
+├── index.html              # Portada principal del sitio
+├── bitacora.html           # Registro de proceso y desarrollo
+├── mariana.html            # Perfil individual: Mariana Sosa
+├── miguel.html             # Perfil individual: Miguel Marcaida
+├── carolina.html           # Perfil individual: Carolina Silva Cotto
+├── sergio.html             # Perfil individual: Sergio Cesar Barrientos
+├── karina.html        # Perfil individual: Karina
+├── css/
+│   └── styles.css          # Hoja de estilos globales
+├── js/
+│   ├── main.js             # Lógica e interactividad de la portada
+│   ├── mariana.js          # Función dinámica del perfil de Mariana
+│   ├── miguel.js           # Función dinámica del perfil de Miguel
+│   ├── carolina.js         # Función dinámica del perfil de Carolina
+│   ├── sergio.js           # Función dinámica del perfil de Sergio
+│   └── karina.js           # Función dinámica del perfil de Karina
+└── img/                    # Recurso de imágenes y avatares
 
 ---
 
-## 🤖 Uso de IA
+## 🎨 Guía de Estilos
 
-| Herramienta | ¿Para qué se usó? |
-| :--- | :--- |
-| **ChatGPT / DeepSeek** | Asistencia en la estructura HTML, estilos CSS y funciones JavaScript. |
-| **Plan** | Gratuito. |
-| **Revisión** | Todo el código fue revisado, adaptado y probado por el equipo. |
+### Paleta de Colores Hexadecimal
+* 💜 **Primary Color:** `#8b5cf6` (Violeta Principal)
+* 💜 **Primary Hover:** `#7c3aed` (Violeta Oscuro)
+* 🩵 **Secondary Color:** `#22d3ee` (Cian Neón / Acento)
+* 🩵 **Secondary Hover:** `#06b6d4` (Cian Oscuro)
+* 🌌 **Background Color:** `#0f0b1f` (Fondo Oscuro General)
+* 💳 **Card Background:** `#1b1633` (Fondo de Tarjetas)
+* 🔳 **Border Color:** `#3b3260` (Bordes y Separadores)
+
+### Tipografía
+* ✍️ **Fuente Principal:** `"Roboto", sans-serif` (Google Fonts)
+* ✍️ **Fuente Footer:** `"Rubik", sans-serif` (Google Fonts)
+
+### Breakpoints Adaptativos (Responsive Design)
+* 📱 **Mobile (< 400px):** Menú colapsable estilo hamburguesa, carrusel de 1 tarjeta por vista.
+* 📐 **Tablet (400px - 900px):** Navegación intermedia y carrusel de 2 tarjetas por vista.
+* 💻 **Desktop (> 900px y 1200px):** Menú expandido con *dropdown*, grilla de 3 columnas para el equipo y carrusel de 3 tarjetas por vista.
 
 ---
 
-## 📄 Licencia
+## ⚙️ Funciones JavaScript e Interactividad
 
-Proyecto académico — 2026 © TechArg
+### 1. Portada (`index.html` / `js/main.js`)
+* 📱 **Menú Hamburguesa & Dropdown:** Gestión del menú desplegable y menú lateral responsivo en móviles.
+* 🎠 **Carrusel de Habilidades:** Control de navegación por botones e indicadores de puntos (*dots*).
+* 🌅 **Saludo Dinámico por Horario:** Renderiza automáticamente *"Buenos días"*, *"Buenas tardes"* o *"Buenas noches"* según la hora del usuario.
+* ⬆️ **Botón "Volver arriba":** Aparece al realizar scroll y permite regresar rápidamente al inicio de la página. Esta funcionalidad fue incorporada en los distintos perfiles del proyecto.
+
+### 2. Perfiles Individuales
+* 🔹 **Perfil Mariana (`js/mariana.js`):** Contador interactivo de proyectos/habilidades.
+* 🔹 **Perfil Miguel (`js/miguel.js`):** Selector interactivo de temas/vistas previas de discos.
+* 🔹 **Perfil Carolina (`js/carolina.js`):** Modal interactivo emergente de habilidades.
+* 🔹 **Perfil Sergio (`js/sergio.js`):** Botón interactivo de "Volver arriba" que aparece al hacer scroll y permite regresar rápidamente al inicio de la página. La funcionalidad fue incorporada en los distintos perfiles del proyecto.
+* 🔹 **Perfil Karina (`js/karina.js`):** Sistema de reconocimiento dinámico con almacenamiento local (`localStorage`).
+
+---
+
+## 🤖 Uso de Inteligencia Artificial y Criterio de Autoría
+
+De acuerdo con las pautas del trabajo práctico, el equipo utilizó herramientas de Inteligencia Artificial como asistente técnico:
+
+* 🛠️ **Herramientas utilizadas:** ChatGPT y Claude 3.5 Sonnet (Planes gratuitos).
+* 💻 **Asistencia en Código:** Apoyo en optimización de sintaxis Flexbox y CSS Grid, y cálculos para el carrusel interactivo.
+* 🔍 **Debugging:** Identificación y corrección de errores en eventos dinámicos y clases del CSS.
+* 🖼️ **Imágenes y Avatares:** Uso de prompts específicos para generar avatares con estética neón en tono oscuro.
+* 👥 **Criterio propio:** Todo el código y las respuestas generadas por la IA fueron adaptadas, integradas y testeadas por los integrantes del equipo para asegurar el entendimiento total de la lógica utilizada.
+
+---
+
+## 📈 Evolución y Próximos Pasos
+
+1. ⚙️ Implementación de un backend en Node.js para el envío de formularios de contacto en producción.
+2. 🌙 Persistencia de estado de temas (Modo Oscuro / Claro) mediante `localStorage`.
+3. 📦 Componentización del sitio en un framework como React o Vue.js.
+
+---
+
+*Desarrollado con ❤️ por el equipo TechArg — IFTS 29 (2026)*
