@@ -14,7 +14,7 @@ Incluye una portada con la presentación del equipo, perfiles individuales de ca
 | Miguel Marcaida | [@Miguel-Marcaida](https://github.com/Miguel-Marcaida) |
 | Carolina Silva Cotto | [@csilvacotto-2202](https://github.com/csilvacotto-2202) |
 | Sergio Cesar Barrientos | [@SergioCesarBarrientos](https://github.com/SergioCesarBarrientos) |
-| Karina Sánchez | [@karinaluciasanz](https://github.com/karinaluciasanz |
+| Karina Sánchez | [@karinaluciasanz](https://github.com/karinaluciasanz) |
 
 ---
 
