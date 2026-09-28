@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil | Karina Sanchez</title>
+
+    <!-- Fuentes y Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Íconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tu archivo CSS individual -->
+    <link rel="stylesheet" href="css/karina.css">
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <header class="main-header">
+        <div class="logo">&lt;KarinaSanchez /&gt;</div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="bitacora.html">Bitácora</a></li>
+                <li><a href="karina.html" class="active">Karina</a></li>
+                <li><a href="mariana.html">Mariana</a></li>
+                <li><a href="miguel.html">Miguel</a></li>
+                <li><a href="carolina.html">Carolina</a></li>
+                <li><a href="sergio.html">Sergio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN DE PERFIL PRINCIPAL -->
+    <main class="profile-container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="badge">Desarrolladora Web & Diseñadora</span>
+                <h1>Lucia Karina Sanchez</h1>
+                <p class="tagline">Transformando ideas en soluciones digitales con disciplina, vectorización y código.</p>
+                
+                <div class="hero-actions">
+                    <button id="btn-interactive" class="btn-primary">
+                        <i class="fa-solid fa-bolt"></i> Impulso Interactivo
+                    </button>
+                </div>
+                
+                <div class="mantra-box">
+                    <p id="interactive-text">🔥 "La disciplina de hoy es la maestría del mañana. Cada línea de código cuenta."</p>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="image-frame">
+                    <img src="img/karina/perfil.png" alt="Foto de Karina Sanchez" class="profile-avatar">
+                </div>
+            </div>
+        </section>
+
+        <!-- TARJETAS INTERACTIVAS (3D TILTING) -->
+        <section class="details-grid">
+            <div class="detail-card">
+                <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                <h3>Desarrollo Frontend</h3>
+                <p>Especializada en maquetación semántica HTML5, estilos avanzados CSS3 y lógica interactiva con JavaScript.</p>
+            </div>
+
+            <div class="detail-card">
+                <div class="card-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                <h3>Diseño Vectorial & Impresión</h3>
+                <p>Creación de diseños vectoriales, preparación de pliegos de impresión y personalización en sublimación.</p>
+            </div>
+
+            <div class="detail-card">
+                <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+                <h3>Bases de Datos & Control de Versiones</h3>
+                <p>Modelado de datos MySQL, flujo de trabajo colaborativo en Git/GitHub y despliegues continuos.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Karina Sanchez - TP Grupal Front-End</p>
+    </footer>
+
+    <!-- SCRIPT JS INDIVIDUAL -->
+    <script src="js/karina.js"></script>
+</body>
+</html>

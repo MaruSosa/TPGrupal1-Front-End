@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/sergio.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title> Sergio Cesar Barrientos - TechArg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="shortcut icon" href="img/sergio/ifts.png" type="image/x-icon">
-    <title> Sergio Cesar Barrientos</title>
+
 </head>
 
 <body>
@@ -17,27 +22,27 @@
 
     <header class="header">
         <div class="logo">
-            <span><img src="img/sergio/ifts.png" alt="" width="40px"></span>
+            <span>TechArg</span>
         </div>
 
         <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-            <i class="bx bx-menu"></i>
+                <i class="fas fa-bars"></i>
         </button>
 
         <nav class="nav" id="navMenu">
             <a href="index.html">Inicio</a>
             <a href="#about">Sobre mi</a>
-            <a href="#skills">Skills</a>
+            <a href="#skills">Habilidades</a>
             <a href="#hobbies">Intereses</a>
-            <a href="#contact">Contacto</a>
+            <a href="#peliculas">Peliculas</a>
             <div class="dropdown">
-                <a href="index.html#equipo" class="dropdown-btn active">Perfiles ▾</a>
+                <a href="index.html#equipo" class="dropdown-btn active">Equipo ▾</a>
                 <div class="dropdown-content">
                     <a href="mariana.html">Mariana Sosa</a>
                     <a href="miguel.html">Miguel Marcaida</a>
                     <a href="carolina.html">Carolina Silva Cotto</a>
                     <a href="sergio.html">Sergio Cesar Barrientos</a>
-                    <a href="integrante5.html">Nombre 5</a>
+                    <a href="karina.html">Karina Sanchez</a>
                 </div>
             </div>
         </nav>
@@ -47,57 +52,64 @@
     <main>
 
 
-        <section>
-            <div class="primera-parte">
-                <h1>Sergio Cesar Barrientos</h1>
-                <h2>Desarrollador de Software | Web Developer | QA Tester</h2>
-            </div>
-        </section>
 
+        <div class="primera-parte">
+            <h1>Sergio Cesar Barrientos</h1>
+            <h2>Desarrollador de Software | Web Developer | QA Tester</h2>
+        </div>
 
 
         <section id="about">
 
-            <div class="segunda-parte">
+            <div class="profile-section">
+                <div class="profile-container">
 
-                <div class="informacion">
-                    <h2>Sobre mi</h2>
-                    <p> Soy estudiante de <b>Desarrollo de Software</b>, con conocimientos en <b>Desarrollo Web Full
-                            Stack</b>, <b>testing QA</b>
-                        y <b>automatización de pruebas.</b> <br>
+                    <div class="profile-img">
+                        <img src="img/sergio/yo.png" alt="avatar de Sergio Cesar Barrientos" />
+                    </div>
 
-                        <br>Empecé mi recorrido con un curso de Desarrollo Web Full Stack, seguido por uno de Testing
-                        QA,
-                        donde encontré un gran interés y pasión por el mundo de la tecnología. Actualmente me encuentro
-                        estudiando en
-                        la Tecnicatura Superior en Desarrollo de Software, con el objetivo de complementar y seguir
-                        fortaleciendo aun
-                        mas mis conocimientos en el mundo IT.<br>
+                    <div class="profile-info">
+                        <h1>Sergio Cesar Barrientos</h1>
 
-                        <br>Tengo interés en explorar otras áreas en el futuro, como el <b>modelado 3D</b> y la
-                        <b>inteligencia artificial</b>, dos campos de los que me gustaría aprender y desarrollar. <br>
+                        <ul class="profile-datos">
+                            <li><strong>Ciudad:</strong> Flores, CABA</li>
+                            <li><strong>Edad:</strong> 27 años</li>
+                        </ul>
 
-                        <br>Continúo formándome a través de la facultad, proyectos y prácticas autodidactas.
-                    </p>
+                        <p class="profile-bio">
+                            Soy estudiante de <b>Desarrollo de Software</b>, con conocimientos en <b>Desarrollo Web Full
+                                Stack</b>, <b>testing QA</b>
+                            y <b>automatización de pruebas.</b> <br>
 
+                            <br>Empecé mi recorrido con un curso de Desarrollo Web Full Stack, seguido por uno de
+                            Testing
+                            QA,
+                            donde encontré un gran interés y pasión por el mundo de la tecnología. Actualmente me
+                            encuentro
+                            estudiando en
+                            la Tecnicatura Superior en Desarrollo de Software, con el objetivo de complementar y seguir
+                            fortaleciendo aun
+                            mas mis conocimientos en el mundo IT.<br>
 
-                    <div class="botones">
-                        <a href="https://www.linkedin.com/" target="_blank"> <i
-                                class="ri-linkedin-line"></i>Linkedin</a>
+                        </p>
 
-                        <a href="https://github.com/SergioCesarBarrientos" target="_blank"> <i
-                                class="ri-github-line"></i>GitHub</a>
+                        <div class="profile-socials">
+                            <a href="https://www.linkedin.com/" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a href="https://github.com/SergioCesarBarrientos" target="_blank" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="fotografia">
-                    <img src="img/sergio/yo.png" alt="Foto de referencia de Sergio">
-                </div>
 
             </div>
 
         </section>
-
 
 
 
@@ -106,7 +118,7 @@
         <section class="skills" id="skills">
 
             <div class="titulo-skills">
-                <h2>Mis Skills</h2>
+                <h2>Habilidades</h2>
                 <p>
                     Tecnologías y herramientas que conozco y con las que continúo formándome.
                 </p>
@@ -115,50 +127,51 @@
             <div class="skills-contenedor">
 
                 <div class="skill">
-                    <i class="ri-html5-line"></i>
                     <h3>HTML</h3>
+                    <i class="devicon-html5-plain colored"></i>
                     <p>Desarrollo de estructuras web semánticas.</p>
                 </div>
 
                 <div class="skill">
-                    <i class="ri-css3-line"></i>
                     <h3>CSS</h3>
+                    <i class="devicon-css3-plain colored"></i>
                     <p>Diseño de interfaces y desarrollo responsive.</p>
                 </div>
 
                 <div class="skill">
-                    <i class="ri-javascript-line"></i>
                     <h3>JavaScript</h3>
+                    <i class="devicon-javascript-plain colored"></i>
                     <p>Desarrollo de funcionalidades e interacción web.</p>
                 </div>
 
                 <div class="skill">
-                    <i class="ri-reactjs-line"></i>
                     <h3>React</h3>
+                    <i class="devicon-react-original colored"></i>
                     <p>Desarrollo de interfaces mediante componentes.</p>
                 </div>
 
                 <div class="skill">
-                    <i class="ri-database-2-line"></i>
                     <h3>MongoDB</h3>
+                    <i class="devicon-mongodb-plain colored"></i>
                     <p>Gestión de bases de datos NoSQL.</p>
                 </div>
 
                 <div class="skill">
-                    <i class="ri-database-line"></i>
                     <h3>SQL</h3>
+                    <i class="devicon-mysql-plain colored"></i>
                     <p>Consultas y gestión de bases de datos.</p>
                 </div>
 
                 <div class="skill">
-                    <i class="ri-bug-line"></i>
                     <h3>QA Testing</h3>
+                    <i class="devicon-selenium-original colored"></i>
                     <p>Pruebas funcionales y control de calidad.</p>
                 </div>
 
                 <div class="skill">
-                    <i class="ri-checkbox-circle-line"></i>
+
                     <h3>Automatización</h3>
+                    <i class="devicon-playwright-plain colored"></i>
                     <p>Automatización de pruebas de software.</p>
                 </div>
 
@@ -183,7 +196,7 @@
             <div class="hobbies-contenedor">
 
                 <div class="hobby">
-                    <i class="ri-box-3-line"></i>
+                    <i class="devicon-blender-original colored"></i>
                     <h3>Modelado 3D</h3>
                     <p>
                         Me interesa aprender sobre modelado 3D y explorar las posibilidades
@@ -192,7 +205,7 @@
                 </div>
 
                 <div class="hobby">
-                    <i class="ri-robot-line"></i>
+                    <i class="devicon-python-plain colored"></i>
                     <h3>Inteligencia Artificial</h3>
                     <p>
                         Me interesa entender cómo evoluciona la inteligencia artificial
@@ -201,7 +214,7 @@
                 </div>
 
                 <div class="hobby">
-                    <i class="ri-translate-2"></i>
+                    <i class="devicon-google-plain colored"></i>
                     <h3>Idioma alemán</h3>
                     <p>
                         Quiero aprender alemán y conocer más sobre
@@ -214,42 +227,52 @@
         </section>
 
 
+        <section class="peliculas" id="peliculas">
 
+            <div class="profile-section">
+                <h2>🎬 Películas favoritas</h2>
 
+                <div class="cards-grid">
 
-        <section class="contacto" id="contact">
+                    <div class="card-item">
+                        <i class="fas fa-film"></i>
+                        <h3>El amanecer de los muertos</h3>
+                        <p>2004 · Zack Snyder</p>
+                    </div>
 
+                    <div class="card-item">
+                        <i class="fas fa-film"></i>
+                        <h3>Resident Evil</h3>
+                        <p>2002 · Paul W. S. Anderson</p>
+                    </div>
 
-            <div class="titulo-contacto">
-                <h2>Contacto</h2>
-                <p>
-                    ¿Tenés alguna consulta o querés ponerte en contacto conmigo?
-                </p>
+                    <div class="card-item">
+                        <i class="fas fa-film"></i>
+                        <h3>Train to Busan</h3>
+                        <p>2016 · Yeon Sang-ho</p>
+                    </div>
+
+                    <div class="card-item">
+                        <i class="fas fa-film"></i>
+                        <h3>28 días después</h3>
+                        <p>2002 · Danny Boyle</p>
+                    </div>
+
+                    <div class="card-item">
+                        <i class="fas fa-film"></i>
+                        <h3>Guerra Mundial Z</h3>
+                        <p>2013 · Marc Forster</p>
+                    </div>
+
+                    <div class="card-item">
+                        <i class="fas fa-film"></i>
+                        <h3>Zombieland</h3>
+                        <p>2009 · Ruben Fleischer</p>
+                    </div>
+
+                </div>
             </div>
 
-            <form class="formulario">
-
-                <div class="campo">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                </div>
-
-                <div class="campo">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="tuemail@gmail.com" required>
-                </div>
-
-                <div class="campo">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" placeholder="Escribí tu mensaje..." rows="6"
-                        required></textarea>
-                </div>
-
-                <button type="submit">
-                    <i class="ri-send-plane-line"></i>Enviar mensaje
-                </button>
-
-            </form>
 
         </section>
 
@@ -258,28 +281,44 @@
 
 
     <footer class="footer">
-
-        <div class="footer-contenido">
-
-            <div class="footer-info">
-                <p>© 2026 Sergio Cesar Barrientos</p>
+        <div class="footer-container">
+            <!-- Columna 1: Logo + descripción -->
+            <div class="footer-col">
+                <h3>TechArg</h3>
+                <p>Equipo de desarrollo web - DSWF 2026</p>
             </div>
 
-            <div class="footer-enlaces">
-
-                <a href="https://github.com/SergioCesarBarrientos" target="_blank"><i
-                        class="ri-github-line"></i>GitHub</a>
-
-                <a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-line"></i>Linkedin</a>
-
+            <!-- Columna 2: Navegación -->
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#equipo">Equipo</a></li>
+                    <li><a href="bitacora.html">Bitácora</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
             </div>
 
+            <!-- Columna 3: Redes -->
+            <div class="footer-col">
+                <h4>Seguinos</h4>
+                <div class="footer-socials">
+                    <a href="https://github.com/SergioCesarBarrientos" target="_blank" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
         </div>
 
+        <!-- Copyright -->
+        <div class="footer-copy">
+            <p>2026 © TechArg - Todos los derechos reservados</p>
+        </div>
     </footer>
 
     <button id="btnArriba" class="btn-arriba">
-        <i class='bx bx-up-arrow-alt'></i>
+        <i class="fas fa-arrow-up"></i>
     </button>
 
     <script src="js/main.js"></script>

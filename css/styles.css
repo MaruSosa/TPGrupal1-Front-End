@@ -31,6 +31,11 @@
   padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 img {
   max-width: 100%;
   height: auto;
@@ -68,6 +73,9 @@ body {
 .logo {
   display: flex;
   align-items: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--primary-color);
 }
 
 /* Botón hamburguesa (solo mobile) */
@@ -245,9 +253,10 @@ body {
 /* ===================================================
    4. TARJETAS DE EQUIPO
    =================================================== */
-.team-section {
+.team-section{
     padding-bottom: 70px;
 }
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -526,11 +535,12 @@ body {
    =================================================== */
 
 .contact-section {
-  padding: 1rem 1rem 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+      min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .contact-container {
@@ -817,6 +827,52 @@ a.socials-item:hover .linkedin  { filter: drop-shadow(0 0 8px #0a66c2); }
   font-size: 0.85rem;
 }
 
+
+
+
+
+
+.btn-arriba {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid #5a5a8a;
+    border-radius: 50%;
+
+    background-color: #2e2e4c;
+    color: #ffffff;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.3s ease;
+
+    z-index: 1000;
+}
+
+.btn-arriba:hover {
+    background-color: #44446b;
+    border-color: #7777b5;
+    transform: translateY(-5px);
+}
+
+.btn-arriba.mostrar {
+    opacity: 1;
+    visibility: visible;
+}
 /* ===================================================
    10. MEDIA QUERIES
    =================================================== */

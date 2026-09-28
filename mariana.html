@@ -1,76 +1,114 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio de Mariana Sosa</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"/>
-      
-    <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-/>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-    <link rel="shortcut icon" href="img/sergio/ifts.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/mariana.css" />
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
-    <!-- ENCABEZADO / NAVEGACIÓN  -->
-    <header class="header">
-      <div class="logo">
-        <span>TechArg</span>
+  <title>Mariana Sosa - TechArg</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <!-- Devicon -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+  />
+
+  <link
+    rel="shortcut icon"
+    href="img/logoItfs.png"
+    type="image/x-icon"
+  />
+
+  <link rel="stylesheet" href="css/mariana.css" />
+</head>
+
+<body>
+
+  <!-- ENCABEZADO / NAVEGACIÓN -->
+  <header class="header">
+
+    <div class="logo">
+      <span>TechArg</span>
+    </div>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Abrir menú"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav class="nav" id="navMenu">
+
+      <a href="index.html">Inicio</a>
+      <a href="index.html#equipo">Nosotros</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="bitacora.html">Bitácora</a>
+      <a href="index.html#habilidades">Habilidades</a>
+
+      <div class="dropdown">
+
+        <a
+          href="index.html#equipo"
+          class="dropdown-btn active"
+        >
+          Perfiles ▾
+        </a>
+
+        <div class="dropdown-content">
+
+          <a href="mariana.html">Mariana Sosa</a>
+          <a href="miguel.html">Miguel Marcaida</a>
+          <a href="carolina.html">Carolina Silva Cotto</a>
+          <a href="sergio.html">Sergio Cesar Barrientos</a>
+          <a href="karina.html">Karina Sanchez</a>
+
+        </div>
+
       </div>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-        <i class="fas fa-bars"></i>
-      </button>
+    </nav>
 
-      <nav class="nav" id="navMenu">
-        <a href="index.html">Inicio</a>
-        <a href="index.html#equipo">Nosotros</a>
-        <a href="index.html#contacto">Contacto</a>
-        <a href="bitacora.html">Bitácora</a>
-        <a href="index.html#habilidades">Habilidades</a>
-        <div class="dropdown">
-          <a href="index.html#equipo" class="dropdown-btn active">Perfiles ▾</a>
-          <div class="dropdown-content">
-            <a href="mariana.html">Mariana Sosa</a>
-            <a href="miguel.html">Miguel Marcaida</a>
-            <a href="carolina.html">Carolina Silva Cotto</a>
-            <a href="sergio.html">Sergio Cesar Barrientos</a>
-            <a href="karina.html">karina Sanz</a>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <!-- La sección de inicio funciona como presentación principal y destaca mi perfil profesional. -->
-      <section id="inicio" class="hero">
-        <div class="hero-content">
-          <p class="hero-saludo">Hola, soy</p>
+  </header>
 
-          <h1>Mariana Sosa</h1>
+  <main>
 
-          <h2>
-            Estudiante de Ingeniería en Sistemas y Tecnicatura en Desarrollo de
-            Software
-          </h2>
+    <!-- INICIO -->
+    <section id="inicio" class="hero">
 
-          <p class="hero-description">
-            Para mí, construir software va más allá de escribir código limpio;
-            se trata de entender el problema, planificar la estrategia y
-            gestionar el proceso hacia el éxito.
-          </p>
-        </div>
-      </section>
+      <div class="hero-content">
+
+        <p class="hero-saludo">Hola, soy</p>
+
+        <h1>Mariana Sosa</h1>
+
+        <h2>
+          Estudiante de Ingeniería en Sistemas y Tecnicatura en Desarrollo de Software
+        </h2>
+
+        <p class="hero-description">
+          Para mí, construir software va más allá de escribir código limpio;
+          se trata de entender el problema, planificar la estrategia y
+          gestionar el proceso hacia el éxito.
+        </p>
+
+      </div>
+
+    </section>
 
       <!-- SOBRE MÍ / DATOS -->
       <section class="profile-section">
@@ -392,7 +430,8 @@
 
         </div>
       </div>
-      <!-- /footer-container -->
+
+<script src="js/main.js"></script>
 
       <!-- Copyright -->
       <div class="footer-copy">
@@ -402,3 +441,4 @@
   </body>
   <script src="js/main.js"></script>
 </html>
+
