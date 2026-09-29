@@ -30,8 +30,7 @@ El sitio funciona como portal oficial de presentación de nuestro equipo de desa
 * 📓 **Bitácora de Desarrollo:** Registro de las decisiones de diseño, dificultades técnicas superadas y la evolución del proyecto.
 * 🎯 **Navegación Dinámica:** Menú responsive con desplegable (*dropdown*) para acceder a los perfiles e interacciones dinámicas con JavaScript.
 
-🔗 **Sitio Web Publicado (Vercel):** [https://techarg-tp1.vercel.app](https://techarg-tp1.vercel.app)
-
+🔗 **Sitio Web Publicado (Vercel):** [https://trabajogrupal-front-end.vercel.app/]
 ## 📁 Estructura del Proyecto
 
 ```
